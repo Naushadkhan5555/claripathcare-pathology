@@ -1,0 +1,607 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clari Pathcare — Book Tests & Packages</title>
+  <link rel="apple-touch-icon" href="clari-512.png"><link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png">
+<link rel="apple-touch-icon" href="favicon-512x512.png">
+
+
+  <meta name="description" content="Clari Pathcare — NABL-certified lab Reports. Home sample collection, health packages & individual tests. Book online or via WhatsApp.">
+  <meta name="theme-color" content="#0e4d92">
+  <link rel="icon" type="image/png" sizes="16x16" href="">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png">
+<link rel="apple-touch-icon" href="favicon-512x512.png">
+
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root{ --brand:#0e4d92; --accent:#41a4b6; --muted:#6b7280; --max:1100px; }
+    body { font-family: Inter, 'Segoe UI', Tahoma, Arial, sans-serif; background: linear-gradient(90deg,#f4f6f9,#e9ecef); color:#111827; margin:0; }
+    /* Sticky header */
+    .header { position:sticky; top:0; z-index:1100; background:#fff; box-shadow:0 4px 14px rgba(16,24,40,0.06); }
+    .header-inner{max-width:var(--max); margin:auto; display:flex; align-items:center; gap:12px; padding:12px 16px;}
+    .logo-img{height:54px; width:auto}
+    /* Search */
+    .search-wrap{flex:1; position:relative; max-width:720px}
+    .search-input{width:100%; padding:10px 14px; border-radius:8px; border:1px solid #e6e9ee}
+    .suggestions{position:absolute; left:0; right:0; top:calc(100% + 8px); background:#fff; border-radius:8px; box-shadow:0 10px 30px rgba(16,24,40,0.12); max-height:340px; overflow:auto; z-index:1150}
+    .suggest-item{display:flex; justify-content:space-between; gap:10px; padding:10px 12px; border-bottom:1px solid #f1f3f5; cursor:pointer}
+    .suggest-item:hover{background:#f7fbff}
+    .type-badge{font-size:.78rem; color:var(--brand); font-weight:700; background:rgba(14,77,146,0.06); padding:4px 8px; border-radius:999px}
+
+    /* page layout */
+    main{max-width:var(--max); margin:20px auto; padding:0 16px;}
+    .card-shadow{box-shadow:0 8px 30px rgba(16,24,40,0.06); border-radius:10px; border:0}
+    .carousel-img{height:220px; object-fit:cover; border-radius:8px}
+    .reveal{opacity:0; transform:translateY(10px); transition:opacity .6s ease, transform .6s ease}
+    .reveal.show{opacity:1; transform:none}
+
+    /* booking modal */
+    .multi-list{max-height:300px; overflow:auto; border:1px solid #eef2f5; padding:8px; border-radius:8px; background:#fff}
+    .select-item{display:flex; gap:12px; align-items:center; padding:10px; border-radius:6px}
+    .select-item:hover{background:#f8fbff}
+    .price-tight{font-weight:800; color:#0b3a62}
+    .whatsapp-proc{background:#25D366; color:#fff; border:none}
+
+    /* Cart list (modal + sidebar) */
+    .cart-item { display:flex; justify-content:space-between; align-items:center; padding:8px 10px; border-radius:6px; background:#fafafa; margin-bottom:8px; }
+    .cart-remove { border: none; background: #ef4444; color:white; padding:6px 8px; border-radius:6px; cursor:pointer; }
+    .cart-empty { color:var(--muted); padding:12px; }
+
+    /* Sidebar behavior (responsive) */
+    /* Mobile first: sidebar stacks under content; comfy tap areas */
+    @media (max-width: 575.98px){
+      .header-inner{padding:8px}
+      .carousel-img{height:150px}
+      .search-wrap{max-width:100%}
+      .side-total{font-size:1.05rem}
+      .btn-sm-add{padding:.45rem .7rem}
+    }
+    /* Tablet ≥576px */
+    @media (min-width: 576px) and (max-width: 991.98px){
+      .carousel-img{height:180px}
+    }
+    /* Desktop ≥992px: make the sidebar sticky so Quick Book + Added panel stay visible */
+    @media (min-width: 992px){
+      aside.sticky-col{ position: sticky; top: 90px; height: fit-content; }
+    }
+    /* Very large screens */
+    @media (min-width: 1400px){
+      main{max-width: 1280px;}
+    }
+
+  
+  </style>
+</head>
+<body>
+
+  <!-- Header with logo + search (sticky) -->
+  <header class="header" role="banner">
+    <div class="header-inner">
+      <!-- Replace src with your logo path -->
+      <img id="siteLogo" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><rect width='120' height='120' rx='20' fill='%230e4d92'/><text x='60' y='76' fill='white' font-family='Segoe UI, Tahoma' font-size='42' text-anchor='middle'>CP</text></svg>" class="logo-img" alt="Clari Pathcare logo">
+      <div style="min-width:160px">
+        <div style="font-weight:700; font-size:1rem">Clari Pathcare</div>
+        <div style="font-size:.85rem; color:var(--muted)">NABL certified Reports • Home sample collection</div>
+      </div>
+
+      <div class="search-wrap ms-3 me-3" style="flex:1">
+        <input id="globalSearch" class="search-input" type="search" placeholder="Search tests or packages (e.g. thyroid, full body, vitamin D)" aria-label="Search">
+        <div id="suggestions" class="suggestions d-none" aria-expanded="false"></div>
+      </div>
+
+      <div style="min-width:160px; text-align:right">
+        <a id="whatsappTopBtn" class="btn btn-success" href="#" target="_blank" style="background:#25D366; border:none;">WhatsApp</a>
+        <button class="btn btn-outline-primary ms-2" data-bs-toggle="modal" data-bs-target="#bookModal">Book Now</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Popular packages carousel -->
+  <main>
+    <div id="popularCarousel" class="carousel slide reveal" data-bs-ride="carousel" style="max-width:var(--max); margin:auto;">
+      <div class="carousel-inner" id="carouselInner"></div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#popularCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#popularCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- grid -->
+    <div class="row g-4 mt-4">
+      <div class="col-lg-8">
+        <section id="packagesSection" class="reveal">
+          <h3>Health Packages</h3>
+          <div id="packagesGrid" class="row gy-3"></div>
+        </section>
+
+        <section id="testsSection" class="mt-4 reveal">
+          <h3>Individual Tests</h3>
+          <div id="testsGrid" class="row gy-3"></div>
+        </section>
+      </div>
+
+      <aside class="col-lg-4 sticky-col">
+        <!-- Quick Book -->
+        <div class="card p-3 card-shadow reveal">
+          <h5>Quick Book</h5>
+          <p class="small" style="color:var(--muted)">Click “Add” on any test or package — or open the modal to add multiple items. Your cart updates instantly.</p>
+          <button class="btn btn-primary w-100 mb-2" data-bs-toggle="modal" data-bs-target="#bookModal">Open Booking</button>
+          <a class="btn btn-outline-success w-100" id="whatsappFloat" href="#" target="_blank">Chat on WhatsApp</a>
+        </div>
+
+        <!-- ADDED ITEMS PANEL (NEW) -->
+        <div class="card p-3 mt-3 card-shadow reveal">
+          <div class="d-flex justify-content-between align-items-center">
+            <h6 class="mb-0">Added Items</h6>
+            <small class="text-muted" id="sideCount">0</small>
+          </div>
+          <div id="sideCartList" class="mt-2"></div>
+          <div id="sideCartEmpty" class="cart-empty">No items added yet.</div>
+
+          <hr class="my-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="fw-bold">Total</div>
+            <div id="sideCartTotal" class="price-tight side-total">₹0</div>
+          </div>
+          <button id="sideProceed" class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#bookModal">Proceed to Booking</button>
+        </div>
+
+        <!-- Contact -->
+        <div class="card p-3 mt-3 card-shadow reveal">
+          <h6>Contact</h6>
+          <div class="small" style="color:var(--muted)">WhatsApp: <a id="contactWA" href="#" style="color:var(--accent)">+91 9769452302</a></div>
+          <div class="small" style="color:var(--muted)">Email: <a href="mailto:Clari Pathcare@gmail.com" style="color:var(--accent)">Clari Pathcare@gmail.com</a></div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Booking Modal (scrollable) -->
+  <div class="modal fade" id="bookModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+      <div class="modal-content">
+        <form id="bookForm">
+          <div class="modal-header">
+            <h5 class="modal-title">Book Tests / Packages</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3 small text-muted">Choose type, search inside the list, pick many items. Total updates automatically.</div>
+
+            <div class="row g-2 mb-3">
+              <div class="col-md-4">
+                <label class="form-label small">Type</label>
+                <select id="bookType" class="form-select">
+                  <option value="test">Individual Tests</option>
+                  <option value="package">Packages</option>
+                </select>
+              </div>
+              <div class="col-md-8">
+                <label class="form-label small">Search items</label>
+                <input id="bookSearch" class="form-control" placeholder="Type to filter items...">
+              </div>
+            </div>
+
+            <div id="bookList" class="multi-list mb-3" role="listbox" aria-multiselectable="true"></div>
+
+            <div class="mb-3">
+              <h6>Selected Items</h6>
+              <div id="cartList" class="mb-2"></div>
+              <div id="cartEmpty" class="cart-empty">No items selected.</div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-start mb-3 flex-column flex-md-row gap-3">
+              <div>
+                <div class="fw-bold">Total:</div>
+                <div id="bookTotal" class="price-tight">₹0</div>
+              </div>
+
+              <div style="min-width:260px; flex:1">
+                <input id="bookName" class="form-control mb-2" placeholder="Your name" required>
+                <input id="bookPhone" class="form-control mb-2" placeholder="Phone (WhatsApp)" required>
+                <div class="d-flex gap-2">
+                  <input id="bookDate" type="date" class="form-control" required>
+                  <input id="bookTime" type="time" class="form-control">
+                </div>
+              </div>
+            </div>
+
+            <div class="small text-muted">When you click Proceed, WhatsApp will open with a pre-filled booking message (you can edit before sending).</div>
+          </div>
+
+          <div class="modal-footer">
+            <button type="submit" class="btn whatsapp-proc w-100">Proceed to WhatsApp</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="Naushad1">
+    <div style="max-width:var(--max); margin:auto; display:grid; grid-template-columns:1fr 200px 220px; gap:20px;">
+      <div>
+        <h5 style="margin-bottom:0.5rem">About Clari Pathcare</h5>
+        <p style="color:#dbeafe; margin:0">Clari Pathcare provides NABL-accredited lab services with safe home sample collection and fast, accurate reports. Book online or via WhatsApp.</p>
+      </div>
+      <div>
+        <h6>Services</h6>
+        <ul style="list-style:none; padding:0; margin:0">
+          <li><a href="#packagesSection">Health Packages</a></li>
+          <li><a href="#testsSection">Individual Tests</a></li>
+          <li><a href="#bookModal" data-bs-toggle="modal">Home Collection</a></li>
+        </ul>
+      </div>
+      <div>
+        <h6>Contact</h6>
+        <div>WhatsApp: <a id="footerWA" href="#">+91 9769452302</a></div>
+        <div>Email: <a href="mailto:Clari Pathcare@gmail.com">Clari Pathcare@gmail.com</a></div>
+        <div style="margin-top:10px"><small>© 2025 Clari Pathcare. Terms • Privacy</small></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+  /* ------------------------
+     Configuration
+     ------------------------ */
+  const WHATSAPP_NUMBER = '+919769452302'; // REPLACE with your number (with country code, +91...)
+  // -------------------------
+  // Data
+  const DATA = {
+    tests: [
+      { id:'t1', name:'CBC (Complete Blood Count)', price:299, desc:'Complete hemogram: RBC, WBC, Platelets.' },
+      { id:'t2', name:'HbA1c', price:499, desc:'Glycated haemoglobin (average blood sugar).' },
+      { id:'t3', name:'Fasting Blood Sugar', price:149, desc:'Fasting plasma glucose measurement.' },
+      { id:'t4', name:'Thyroid Profile (TSH,T3,T4)', price:699, desc:'Assess thyroid function.' },
+      { id:'t5', name:'Liver Function Test (LFT)', price:1050, desc:'SGOT, SGPT, Bilirubin and others.' },
+      { id:'t6', name:'Kidney Function Test (KFT)', price:899, desc:'Urea, Creatinine, Electrolytes.' },
+      { id:'t7', name:'Lipid Profile', price:799, desc:'Cholesterol, HDL, LDL, Triglycerides.' },
+      { id:'t8', name:'Vitamin D (25-OH)', price:1200, desc:'Serum 25-OH Vitamin D level.' },
+      { id:'t9', name:'Vitamin B12', price:750, desc:'Serum B12 level.' },
+      { id:'t10', name:'CRP (C-reactive Protein)', price:450, desc:'Inflammation / cardiac risk marker.' },
+      { id:'t11', name:'Cardiac (Troponin I + CK-MB)', price:999, desc:'Cardiac marker panel.' },
+      { id:'t12', name:'Hb (Hemoglobin)', price:199, desc:'Hemoglobin concentration.' },
+      { id:'t13', name:'Urine Routine', price:199, desc:'Routine urine analysis.' },
+      { id:'t14', name:'Vitamin Profile (B12, D)', price:1799, desc:'Combined vitamin panels.' },
+      { id:'t15', name:'COVID-19 Antibody (IgG)', price:899, desc:'Sero-surveillance antibody test.' }
+    ],
+    packages: [
+      { id:'p1', name:'Full Body Checkup', price:1999, desc:'Iron studies, LFT, Kidney profile, Lipid, Thyroid, Vitamin D & CBC.', tests:['CBC','LFT','KFT','Lipid','Thyroid','Vitamin D'] },
+      { id:'p2', name:'Basic Health Checkup', price:1200, desc:'Thyroid, CBC, LFT, Hba1c, Lipid profile — essential screening.', tests:['Thyroid','CBC','LFT','HbA1c','Lipid'] },
+      { id:'p3', name:'Women Wellness Package', price:2200, desc:'Women-specific package: hormones, CBC, vitamin profile & thyroid.', tests:['Estradiol','FSH','LH','CBC','Thyroid','Vitamin Profile'] },
+      { id:'p4', name:'Cardiac Risk Package', price:2499, desc:'Cardiac markers, lipid profile & sugar tests for heart risk assessment.', tests:['Lipid','Troponin','CRP','HbA1c'] },
+      { id:'p5', name:'Diabetes Screen', price:699, desc:'HbA1c + Fasting sugar for diabetes monitoring.', tests:['HbA1c','Fasting Sugar'] },
+      { id:'p6', name:'Vitamin Wellness Pack', price:1999, desc:'Vitamin D & B12 bundled for deficiency screening.', tests:['Vitamin D','Vitamin B12'] }
+    ]
+  };
+
+  /* ------------------------
+     Helpers & DOM
+     ------------------------ */
+  const $ = sel => document.querySelector(sel);
+  const $$ = sel => Array.from(document.querySelectorAll(sel));
+  const money = v => '₹' + Number(v || 0).toLocaleString('en-IN');
+  const esc = s => String(s||'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+  // Elements
+  const carouselInner = $('#carouselInner');
+  const packagesGrid = $('#packagesGrid');
+  const testsGrid = $('#testsGrid');
+  const suggestionsEl = $('#suggestions');
+  const globalSearch = $('#globalSearch');
+  const bookModal = new bootstrap.Modal($('#bookModal'));
+  const bookType = $('#bookType'), bookSearch = $('#bookSearch'), bookList = $('#bookList');
+  const cartListEl = $('#cartList'), cartEmptyEl = $('#cartEmpty'), bookTotalEl = $('#bookTotal');
+  const whatsappTopBtn = $('#whatsappTopBtn'), whatsappFloat = $('#whatsappFloat'), contactWA = $('#contactWA'), footerWA = $('#footerWA');
+
+  // Sidebar cart elements (NEW)
+  const sideCartList = $('#sideCartList');
+  const sideCartEmpty = $('#sideCartEmpty');
+  const sideCartTotal = $('#sideCartTotal');
+  const sideCount = $('#sideCount');
+
+  // Cart (selected items) - array of objects { id, type, name, price }
+  let CART = [];
+
+  /* ------------------------
+     Render carousel
+     ------------------------ */
+  function renderCarousel(){
+    carouselInner.innerHTML = '';
+    DATA.packages.forEach((p, i) => {
+      const div = document.createElement('div');
+      div.className = 'carousel-item' + (i===0 ? ' active' : '');
+      div.innerHTML = `
+        <div class="d-flex align-items-end justify-content-start" style="height:220px; background:linear-gradient(0deg, rgba(14,77,146,0.65), rgba(14,77,146,0.25)), url('https://via.placeholder.com/1200x400?text=${encodeURIComponent(p.name)}') center/cover; border-radius:8px; padding:18px;">
+          <div style="color:white; max-width:70%">
+            <h5 style="margin:0">${esc(p.name)}</h5>
+            <div style="font-size:.95rem">${esc(p.desc)}</div>
+            <div style="margin-top:8px"><span class="badge bg-light text-dark">${money(p.price)}</span></div>
+          </div>
+        </div>`;
+      div.addEventListener('click', ()=> openBookModal('package', p.id));
+      carouselInner.appendChild(div);
+    });
+    new bootstrap.Carousel('#popularCarousel', { interval: 3500, ride: 'carousel' });
+  }
+
+  /* ------------------------
+     Render main lists
+     ------------------------ */
+  function renderPackages(){
+    packagesGrid.innerHTML = '';
+    DATA.packages.forEach(p=>{
+      const col = document.createElement('div'); col.className = 'col-md-6';
+      col.innerHTML = `
+        <div class="card p-3 card-shadow">
+          <div class="d-flex justify-content-between align-items-start">
+            <div>
+              <h5 style="margin:0">${esc(p.name)}</h5>
+              <div class="pkg-desc small text-muted">${esc(p.desc)}</div>
+            </div>
+            <div class="text-end">
+              <div class="h5 mb-1">${money(p.price)}</div>
+            </div>
+          </div>
+          <hr/>
+          <div class="small text-muted">${esc(p.tests.join(', '))}</div>
+          <div class="mt-2 d-flex gap-2">
+            <button class="btn btn-sm btn-primary btn-sm-add" data-action="add-item" data-type="package" data-id="${p.id}">Add</button>
+            <button class="btn btn-sm btn-outline-secondary" data-action="show-desc" data-id="${p.id}">Show more</button>
+          </div>
+        </div>`;
+      packagesGrid.appendChild(col);
+    });
+  }
+
+  function renderTests(){
+    testsGrid.innerHTML = '';
+    DATA.tests.forEach(t=>{
+      const col = document.createElement('div'); col.className='col-md-6';
+      col.innerHTML = `
+        <div class="card p-3 card-shadow">
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <h6 style="margin:0">${esc(t.name)}</h6>
+              <div class="small text-muted">${esc(t.desc)}</div>
+            </div>
+            <div class="text-end">
+              <div class="h6 mb-1">${money(t.price)}</div>
+              <div class="mt-2"><button class="btn btn-sm btn-primary btn-sm-add" data-action="add-item" data-type="test" data-id="${t.id}">Add</button></div>
+            </div>
+          </div>
+        </div>`;
+      testsGrid.appendChild(col);
+    });
+  }
+
+  /* ------------------------
+     Search suggestions (global)
+     ------------------------ */
+  function buildSuggestions(q){
+    if(!q){ suggestionsEl.classList.add('d-none'); suggestionsEl.innerHTML=''; return; }
+    q = q.trim().toLowerCase();
+    const results = [];
+    for(const p of DATA.packages){
+      if((p.name + ' ' + p.desc + ' ' + (p.tests||[]).join(' ')).toLowerCase().includes(q)) results.push({type:'package', id:p.id, name:p.name, price:p.price});
+    }
+    for(const t of DATA.tests){
+      if((t.name + ' ' + t.desc).toLowerCase().includes(q)) results.push({type:'test', id:t.id, name:t.name, price:t.price});
+    }
+    suggestionsEl.innerHTML = results.slice(0,12).map(r => `
+      <div class="suggest-item" data-type="${r.type}" data-id="${r.id}">
+        <div>
+          <div style="font-weight:700">${esc(r.name)}</div>
+          <div class="small text-muted">${money(r.price)}</div>
+        </div>
+        <div class="type-badge">${r.type}</div>
+      </div>`).join('');
+    suggestionsEl.classList.toggle('d-none', results.length===0);
+  }
+
+  globalSearch.addEventListener('input', e => buildSuggestions(e.target.value));
+  suggestionsEl.addEventListener('click', e => {
+    const item = e.target.closest('.suggest-item'); if(!item) return;
+    const type = item.dataset.type, id = item.dataset.id;
+    openBookModal(type, id); // opens modal and adds item to cart
+    suggestionsEl.classList.add('d-none');
+  });
+  document.addEventListener('click', e => { if(!e.target.closest('.search-wrap')) suggestionsEl.classList.add('d-none'); });
+  globalSearch.addEventListener('focus', ()=> { if(globalSearch.value.trim()) buildSuggestions(globalSearch.value); });
+
+  /* ------------------------
+     Booking modal + Cart functions
+     ------------------------ */
+  function populateBookList(type, filter=''){
+    const list = (type === 'package') ? DATA.packages.slice() : DATA.tests.slice();
+    filter = (filter||'').trim().toLowerCase();
+    const filtered = list.filter(it => (it.name + ' ' + (it.desc||'') + ' ' + (it.tests?it.tests.join(' '):'')).toLowerCase().includes(filter));
+    bookList.innerHTML = filtered.map(it => {
+      const price = it.price || 0;
+      const brief = it.tests && it.tests.length ? `<div class="small text-muted">${esc(it.tests.slice(0,5).join(', '))}${it.tests.length>5?'...':''}</div>` : '';
+      const desc = it.desc ? `<div class="small text-muted">${esc(it.desc)}</div>` : '';
+      return `<div class="select-item" style="display:flex; justify-content:space-between; align-items:center;">
+        <div style="display:flex; gap:10px; align-items:center; flex:1">
+          <div>
+            <div style="font-weight:700">${esc(it.name)}</div>
+            ${desc}${brief}
+          </div>
+        </div>
+        <div style="min-width:120px; text-align:right">
+          <div class="price-tight">${money(price)}</div>
+          <div class="mt-2"><button class="btn btn-sm btn-primary" data-action="add-item" data-id="${it.id}" data-type="${type}">Add</button></div>
+        </div>
+      </div>`;
+    }).join('') || '<div class="text-muted p-2">No items found</div>';
+  }
+
+  // Cart operations
+  function addToCartById(type, id){
+    let item = null;
+    if(type === 'package') item = DATA.packages.find(p => p.id === id);
+    else item = DATA.tests.find(t => t.id === id);
+    if(!item) return;
+
+    // prevent duplicates of same type+id
+    if(CART.find(c => c.id === item.id && c.type === type)) return;
+
+    CART.push({ id: item.id, type, name: item.name, price: item.price });
+    renderCart();
+  }
+
+  function removeFromCart(index){
+    if(index < 0 || index >= CART.length) return;
+    CART.splice(index, 1);
+    renderCart();
+  }
+
+  function renderCart(){
+    // --- modal list ---
+    cartListEl.innerHTML = '';
+    if(CART.length === 0){
+      cartEmptyEl.style.display = 'block';
+    } else {
+      cartEmptyEl.style.display = 'none';
+      CART.forEach((c, idx) => {
+        const div = document.createElement('div');
+        div.className = 'cart-item';
+        div.innerHTML = `<div style="font-weight:700">${esc(c.name)}</div>
+                         <div style="display:flex; align-items:center; gap:10px">
+                           <div class="price-tight">${money(c.price)}</div>
+                           <button class="cart-remove" data-idx="${idx}">Remove</button>
+                         </div>`;
+        cartListEl.appendChild(div);
+      });
+    }
+    updateTotals();
+
+    // --- sidebar list (NEW) ---
+    sideCartList.innerHTML = '';
+    if(CART.length === 0){
+      sideCartEmpty.style.display = 'block';
+    } else {
+      sideCartEmpty.style.display = 'none';
+      CART.forEach((c, idx) => {
+        const row = document.createElement('div');
+        row.className = 'cart-item';
+        row.innerHTML = `<div class="small" style="font-weight:700">${esc(c.name)}</div>
+                         <div style="display:flex; align-items:center; gap:8px">
+                           <div class="price-tight">${money(c.price)}</div>
+                           <button class="cart-remove" data-idx="${idx}">×</button>
+                         </div>`;
+        sideCartList.appendChild(row);
+      });
+    }
+    sideCount.textContent = CART.length;
+  }
+
+  function updateTotals(){
+    const total = CART.reduce((s,i) => s + Number(i.price || 0), 0);
+    bookTotalEl.textContent = money(total);
+    sideCartTotal.textContent = money(total);
+  }
+
+  // Opening modal programmatically and optionally adding an item
+  function openBookModal(type='test', preselectId=null){
+    bookType.value = type;
+    bookSearch.value = '';
+    populateBookList(type, '');
+    bookModal.show();
+    setTimeout(()=>{ if(preselectId){ addToCartById(type, preselectId); } }, 80);
+  }
+  window.openBookModal = openBookModal;
+
+  // Click handlers (delegated)
+  document.body.addEventListener('click', e => {
+    const btn = e.target.closest('[data-action]');
+    if(btn){
+      const action = btn.dataset.action;
+      if(action === 'add-item'){
+        const type = btn.dataset.type || bookType.value;
+        const id = btn.dataset.id;
+        addToCartById(type, id);
+        return;
+      }
+      if(action === 'show-desc'){
+        const id = btn.dataset.id;
+        const pkg = DATA.packages.find(p => p.id === id);
+        if(pkg){
+          alert(pkg.name + '\n\n' + pkg.desc + '\n\nIncludes:\n - ' + pkg.tests.join('\n - ') + '\n\nPrice: ' + money(pkg.price));
+        }
+        return;
+      }
+    }
+    // remove from either modal list or sidebar list
+    if(e.target.classList.contains('cart-remove')){
+      const idx = Number(e.target.dataset.idx);
+      removeFromCart(idx);
+    }
+  });
+
+  // bookType/bookSearch events
+  bookType.addEventListener('change', ()=> populateBookList(bookType.value, bookSearch.value));
+  bookSearch.addEventListener('input', ()=> populateBookList(bookType.value, bookSearch.value));
+
+  // suggestions keyboard focusability (mutation observer)
+  const suggestionObserver = new MutationObserver(()=>{ suggestionsEl.querySelectorAll('.suggest-item').forEach(el=>el.tabIndex=0); });
+  suggestionObserver.observe(suggestionsEl, { childList:true, subtree:true });
+
+  // ensure click outside hides suggestions
+  document.addEventListener('click', e => { if(!e.target.closest('.search-wrap')) suggestionsEl.classList.add('d-none'); });
+
+  // submit -> WhatsApp
+  $('#bookForm').addEventListener('submit', e => {
+    e.preventDefault();
+    if(CART.length === 0){ alert('Please add at least one test or package to proceed.'); return; }
+    const name = $('#bookName').value.trim() || 'Guest';
+    const phone = $('#bookPhone').value.trim() || '';
+    const date = $('#bookDate').value || '';
+    const time = $('#bookTime').value || '';
+    let total = CART.reduce((s,it) => s + Number(it.price || 0), 0);
+
+    let msg = `Hello Clari Pathcare,%0AI would like to book the following:%0A`;
+    CART.forEach((c) => { msg += `- ${c.type === 'package' ? 'Package' : 'Test'}: ${encodeURIComponent(c.name)} (₹${c.price})%0A`; });
+    msg += `%0ATotal: ₹${total}%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0ADate: ${date} ${time}%0A%0APlease confirm collection.`;
+    const waUrl = `https://wa.me/${WHATSAPP_NUMBER.replace('+','')}?text=${msg}`;
+    window.open(waUrl, '_blank');
+    const bs = bootstrap.Modal.getInstance($('#bookModal')); if(bs) bs.hide();
+  });
+
+  /* ------------------------
+     Init page
+     ------------------------ */
+  renderCarousel();
+  renderPackages();
+  renderTests();
+  renderCart(); // also initializes sidebar panel
+
+  // wire up top WhatsApp buttons
+  whatsappTopBtn.href = `https://wa.me/${WHATSAPP_NUMBER.replace('+','')}`;
+  whatsappFloat.href = `https://wa.me/${WHATSAPP_NUMBER.replace('+','')}`;
+  contactWA.href = `https://wa.me/${WHATSAPP_NUMBER.replace('+','')}`;
+  footerWA.href = `https://wa.me/${WHATSAPP_NUMBER.replace('+','')}`;
+
+  // reveal animations
+  (function(){ document.querySelectorAll('.reveal').forEach(el=>{ const io = new IntersectionObserver(entries => entries.forEach(en=>{ if(en.isIntersecting) el.classList.add('show'); }), {threshold:0.12}); io.observe(el); }); })();
+
+  // keyboard "/" focuses search
+  document.addEventListener('keydown', e => { if(e.key === '/' && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){ e.preventDefault(); $('#globalSearch').focus(); } });
+  </script>
+</body>
+</html>
