@@ -1,18 +1,18 @@
 {
   "name": "Clari Pathcare",
-  "short_name": "ClariPathcare",
+  "short_name": "Pathcare",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#0e4d92",
+  "theme_color": "#0b3a62",
   "icons": [
     {
-      "src": "/android-chrome-192x192.png",
-      "sizes": "192x192",
+      "src": "images/favicon-96x96.png",
+      "sizes": "96x96",
       "type": "image/png"
     },
     {
-      "src": "/android-chrome-512x512.png",
+      "src": "images/favicon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
