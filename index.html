@@ -2,201 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
- <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Clari Pathcare — Book Tests & Packages</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clari Pathcare — Book Tests & Packages</title>
 
+  <!-- FAVICONS -->
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#0e4d92">
 
-<!-- FAVICONS -->
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
-<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
-<meta name="theme-color" content="#0e4d92">
+  <!-- SOCIAL (Open Graph / Twitter) -->
+  <meta property="og:title" content="Clari Pathcare — Book Tests & Packages">
+  <meta property="og:description" content="NABL-certified lab reports, home sample collection, health packages & tests. Book online or via WhatsApp.">
+  <meta property="og:image" content="https://claripathcare.com/favicon-512x512.png">
+  <meta property="og:url" content="https://claripathcare.com">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Clari Pathcare — Book Tests & Packages">
+  <meta name="twitter:description" content="NABL-certified lab reports, home sample collection, health packages & tests.">
+  <meta name="twitter:image" content="https://claripathcare.com/favicon-512x512.png">
 
-<!-- SOCIAL (Open Graph / Twitter) -->
-<meta property="og:title" content="Clari Pathcare — Book Tests & Packages">
-<meta property="og:description" content="NABL-certified lab reports, home sample collection, health packages & tests. Book online or via WhatsApp.">
-<meta property="og:image" content="https://claripathcare.com/favicon-512x512.png">
-<meta property="og:url" content="https://claripathcare.com">
-<meta property="og:type" content="website">
-
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Clari Pathcare — Book Tests & Packages">
-<meta name="twitter:description" content="NABL-certified lab reports, home sample collection, health packages & tests.">
-<meta name="twitter:image" content="https://claripathcare.com/favicon-512x512.png">
-
-<!-- JSON-LD (Organization) -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "url": "https://claripathcare.com",
-  "logo": "https://claripathcare.com/favicon-512x512.png",
-  "name": "Clari Pathcare",
-  "sameAs": [
-    "https://www.facebook.com/claripathcare",
-    "https://www.instagram.com/claripathcare",
-    "https://www.linkedin.com/company/claripathcare",
-    "https://twitter.com/claripathcare"
-  ]
-}
-</script>
-
+  <!-- JSON-LD (Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "url": "https://claripathcare.com",
+    "logo": "https://claripathcare.com/favicon-512x512.png",
+    "name": "Clari Pathcare",
+    "sameAs": [
+      "https://www.facebook.com/claripathcare",
+      "https://www.instagram.com/claripathcare",
+      "https://www.linkedin.com/company/claripathcare",
+      "https://twitter.com/claripathcare"
+    ]
+  }
+  </script>
 
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     :root {
-  --brand-blue: #761e88;    /* main healthcare blue */
-  --brand-green: #8d1d6c;   /* action / success green */
-  --brand-teal: #c21c77;    /* footer / accent */
-  --brand-grey: #faf8fa;    /* light background */
-  --brand-dark: #212529;    /* text */
-  --brand-hover-blue: #0056a3;  /* darker blue for hover */
-  --brand-hover-green: #218838; /* darker green for hover */
-  --max-width: 1100px; }
-   body {
-  font-family: Inter, 'Segoe UI', Tahoma, Arial, sans-serif;
-  /* soft pastel background with a subtle purple tint */
-  background: linear-gradient(135deg, #b918be 0%, #8d1e62 50%, #914774 100%);
-  color: #0e220a;
-  margin: 0;
-}    /* Sticky header */
-   .header {
-  position: sticky;
-  top: 0;
-  z-index: 1100;
-  background: linear-gradient(90deg, var(--brand-purple), var(--brand-yellow));
-  box-shadow: 0 4px 14px rgb(116, 16, 102);
-}
- .header-inner{max-width:var(--max); margin:auto; display:flex; align-items:center; gap:12px; padding:12px 16px; color: ;}
-    .logo-img{height:54px; width:auto;
-      
+      /* Brand palette */
+      --brand-purple: #761e88;
+      --brand-yellow: #ffd166;
+      --brand-blue: #761e88;
+      --brand-green: #25D366;
+      --brand-teal: #c21c77;
+      --brand-grey: #faf8fa;
+      --brand-dark: #212529;
+      --muted: #6b7280;
+      --accent: #0e4d92;
+      --max: 1100px;
     }
+
+    body {
+      font-family: Inter, 'Segoe UI', Tahoma, Arial, sans-serif;
+      background: linear-gradient(135deg, #b918be 0%, #8d1e62 50%, #914774 100%);
+      color: #0e220a;
+      margin: 0;
+    }
+
+    /* Sticky header */
+    .header { position: sticky; top: 0; z-index: 1100; background: linear-gradient(90deg, var(--brand-purple), var(--brand-yellow)); box-shadow: 0 4px 14px rgba(116,16,102,.35); }
+    .header-inner { max-width: var(--max); margin: auto; display: flex; align-items: center; gap: 12px; padding: 12px 16px; color: #fff; }
+    .logo-img { height: 54px; width: auto; background: #fff6fb; border-radius: 8px; }
+
     /* Search */
     .search-wrap{flex:1; position:relative; max-width:720px}
     .search-input{width:100%; padding:10px 14px; border-radius:8px; border:1px solid #e6e9ee}
     .suggestions{position:absolute; left:0; right:0; top:calc(100% + 8px); background:#fff; border-radius:8px; box-shadow:0 10px 30px rgba(16,24,40,0.12); max-height:340px; overflow:auto; z-index:1150}
     .suggest-item{display:flex; justify-content:space-between; gap:10px; padding:10px 12px; border-bottom:1px solid #f1f3f5; cursor:pointer}
     .suggest-item:hover{background:#f7fbff}
-    .type-badge{font-size:.78rem; color:var(--brand); font-weight:700; background:rgba(14,77,146,0.06); padding:4px 8px; border-radius:999px}
+    .type-badge{font-size:.78rem; color:var(--accent); font-weight:700; background:rgba(14,77,146,0.06); padding:4px 8px; border-radius:999px}
 
-    /* page layout */
+    /* Page layout */
     main{max-width:var(--max); margin:20px auto; padding:0 16px;}
     .card-shadow{box-shadow:0 8px 30px rgba(16,24,40,0.06); border-radius:10px; border:0}
     .carousel-img{height:220px; object-fit:cover; border-radius:8px}
     .reveal{opacity:0; transform:translateY(10px); transition:opacity .6s ease, transform .6s ease}
     .reveal.show{opacity:1; transform:none}
 
-    .multi-list{
-  .multi-list {
-  max-height: 300px;
-  overflow: auto;
-  border: 1px solid #eef2f5;
-  padding: 8px;
-  border-radius: 8px;
-  background: #fff;
-  margin-top: 12px;
-}
+    /* List inside modal */
+    .multi-list{ max-height: 300px; overflow: auto; border: 1px solid #eef2f5; padding: 8px; border-radius: 8px; background: #fff; margin-top: 12px; }
+    .select-item { display:flex; gap:12px; align-items:center; padding:10px; border-radius:6px; }
+    .select-item:hover { background:#f8fbff; }
+    .price-tight { font-weight:800; color:#0b3a62; }
+    .whatsapp-proc { background: var(--brand-green); color:#fff; border:none; padding:10px 14px; border-radius:8px; margin-top:12px; width:100%; }
 
-/* moved outside */
-.select-item {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  padding: 10px;
-  border-radius: 6px;
-}
-.select-item:hover {
-  background: #f8fbff;
-}
-.price-tight {
-  font-weight: 800;
-  color: #0b3a62;
-}
-.whatsapp-proc {
-  background: #25D366;
-  color: #fff;
-  border: none;
-  padding: 10px 14px;
-  border-radius: 8px;
-  margin-top: 12px;
-  width: 100%;
-}
+    /* Sidebar */
+    aside.sticky-col { position: sticky; top: 90px; max-height: calc(100vh - 100px); display:flex; flex-direction:column; overflow-y:auto; scrollbar-width: thin; }
+    aside.sticky-col > .card:last-child { margin-top:auto; }
 
-aside.sticky-col {
-  position: sticky;
-  top: 90px;
-  max-height: calc(100vh - 100px);
-  display: flex;
-  flex-direction: column;
-}
-aside.sticky-col > .card:last-child {
-  margin-top: auto; /* pushes Contact/Proceed buttons down */
-}
-
-
-/* bottom sheet style (mobile booking panel) */
-.booking-panel {
-  position: fixed;
-  bottom: 0;
-  left: 0; right: 0;
-  max-height: 70vh; /* ✅ NEW: prevents it covering entire screen */
-  overflow-y: auto;
-  background: #fff;
-  border-radius: 16px 16px 0 0;
-  box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
-  padding: 16px;
-  z-index: 1200; /* ✅ above navbar/search */
-}
-
-
-    /* Cart list (modal + sidebar) */
+    /* Cart list visual */
     .cart-item { display:flex; justify-content:space-between; align-items:center; padding:8px 10px; border-radius:6px; background:#fafafa; margin-bottom:8px; }
-    .cart-remove { border: none; background: #ef4444; color:white; padding:6px 8px; border-radius:6px; cursor:pointer; }
+    .cart-remove { border:none; background:#ef4444; color:white; padding:6px 8px; border-radius:6px; cursor:pointer; }
     .cart-empty { color:var(--muted); padding:12px; }
 
-    /* Sidebar behavior (responsive) */
-    /* Mobile first: sidebar stacks under content; comfy tap areas */
-    /* Sidebar behavior (responsive) */
-/* Mobile first: sidebar stacks under content; comfy tap areas */
-@media (max-width: 575.98px){
-  .header-inner{padding:50px}
-  .carousel-img{height:150px}
-  .search-wrap{max-width:100%}
-  .side-total{font-size:1.05rem}
-  .btn-sm-add{padding:.45rem .7rem}
-}
-aside.sticky-col {
-  position: sticky;
-  top: 90px;            /* stays below header  / siderseprately scroll horha hai */
-  max-height: calc(100vh - 100px); /* full height minus header */
-  overflow-y: auto;     /* ✅ allows scrolling only inside sidebar */
-  scrollbar-width: thin; /* optional: slimmer scrollbar */
-}
-    /* Tablet ≥576px */
-    @media (min-width: 576px) and (max-width: 991.98px){
-      .carousel-img{height:180px}
-    }
-    /* Desktop ≥992px: make the sidebar sticky so Quick Book + Added panel stay visible */
-    @media (min-width: 992px){
-      aside.sticky-col{ position: sticky; top: 90px; height: fit-content; }
-    }
-    /* Very large screens */
-    @media (min-width: 1400px){
-      main{max-width: 1280px;}
-    }
+    /* Desktop bump animation */
+    .aside-bump { animation: asidePulse .5s ease; }
+    @keyframes asidePulse { 0%{ transform:translateX(0); box-shadow:none; } 30%{ transform:translateX(-6px); box-shadow:0 0 0 rgba(37,211,102,.25); } 60%{ transform:translateX(0); box-shadow:0 0 0 rgba(37,211,102,.12);} 100%{ transform:translateX(0); box-shadow:none;} }
 
-    .bodersolid {
-       border-top: 5px solid rgb(247, 248, 248);
-       padding-top: 35px;
+    /* Mobile tweaks */
+    @media (max-width: 575.98px){
+      .carousel-img{height:150px}
+      .search-wrap{max-width:100%}
+      .side-total{font-size:1.05rem}
+      .btn-sm-add{padding:.45rem .7rem}
     }
-    
+    @media (min-width: 576px) and (max-width: 991.98px){ .carousel-img{height:180px} }
+    @media (min-width: 992px){ aside.sticky-col{ position: sticky; top: 90px; height: fit-content; } }
+    @media (max-width: 991.98px){ #cartSidebar .offcanvas-body { padding-bottom: 90px; } }
+
+    /* Footer border */
+    .bodersolid { border-top: 5px solid rgb(247,248,248); padding-top: 35px; }
+
+    /* Mobile added bar */
+    #addedBar { z-index:1300; }
   </style>
 </head>
 <body>
@@ -204,11 +132,10 @@ aside.sticky-col {
   <!-- Header with logo + search (sticky) -->
   <header class="header" role="banner">
     <div class="header-inner">
-      <!-- Replace src with your logo path -->
-      <img id="siteLogo" src="favicon-512x512.png" class="logo-img" alt="Clari Pathcare logo" style="background-color: rgb(255, 246, 251);">
+      <img id="siteLogo" src="favicon-512x512.png" class="logo-img" alt="Clari Pathcare logo">
       <div style="min-width:160px">
         <div style="font-weight:700; font-size:1rem">Clari Pathcare</div>
-        <div style="font-size:.85rem; color:var(--muted)">NABL certified Reports • Home sample collection</div>
+        <div style="font-size:.85rem; color:#e9e9ff">NABL certified Reports • Home sample collection</div>
       </div>
 
       <div class="search-wrap ms-3 me-3" style="flex:1">
@@ -218,7 +145,7 @@ aside.sticky-col {
 
       <div style="min-width:160px; text-align:right">
         <a id="whatsappTopBtn" class="btn btn-success" href="#" target="_blank" style="background:#25D366; border:none;">WhatsApp</a>
-        <button class="btn btn-outline-primary ms-2" data-bs-toggle="modal" data-bs-target="#bookModal">Book Now</button>
+        <button class="btn btn-outline-light ms-2" data-bs-toggle="modal" data-bs-target="#bookModal">Book Now</button>
       </div>
     </div>
   </header>
@@ -233,10 +160,6 @@ aside.sticky-col {
       <button class="carousel-control-next" type="button" data-bs-target="#popularCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
       </button>
-
-
-
-      
     </div>
 
     <!-- grid -->
@@ -255,17 +178,16 @@ aside.sticky-col {
 
       <aside class="col-lg-4 sticky-col">
         <!-- Quick Book -->
-        <div class="card p-3 card-shadow reveal" >
-          <img src="gd-pag.jpg" alt="">
+        <div class="card p-3 card-shadow reveal">
+          <img src="gd-pag.jpg" class="img-fluid rounded mb-2" alt="">
           <h5>Quick Book</h5>
           <p class="small" style="color:var(--muted)">Click “Add” on any test or package — or open the modal to add multiple items. Your cart updates instantly.</p>
           <button class="btn btn-primary w-100 mb-2" data-bs-toggle="modal" data-bs-target="#bookModal">Open Booking</button>
           <a class="btn btn-outline-success w-100" id="whatsappFloat" href="#" target="_blank">Chat on WhatsApp</a>
         </div>
 
-        <!-- ADDED ITEMS PANEL (NEW) -->
+        <!-- ADDED ITEMS PANEL (Desktop) -->
         <div class="card p-3 mt-3 card-shadow reveal">
-          <img src="gd" alt="">
           <div class="d-flex justify-content-between align-items-center">
             <h6 class="mb-0">Added Items</h6>
             <small class="text-muted" id="sideCount">0</small>
@@ -351,44 +273,77 @@ aside.sticky-col {
       </div>
     </div>
   </div>
-  
 
   <!-- Footer -->
-   <div class="bodersolid">
-  <footer class="Naushad1">
-    <div style="max-width:var(--max); margin:auto; display:grid; grid-template-columns:1fr 200px 220px; gap:20px;">
-      <div>
-        <h3 style="margin-bottom:0.5rem"> <strong>About Clari Pathcare</strong></h3>
-        <h6 style="color:#dbeafe; margin:0">Clari Pathcare provides NABL-accredited lab services with safe home sample collection and fast, accurate reports. Book online or via WhatsApp.</65>
+  <div class="bodersolid">
+    <footer class="Naushad1">
+      <div style="max-width:var(--max); margin:auto; display:grid; grid-template-columns:1fr 200px 220px; gap:20px;">
+        <div>
+          <h3 style="margin-bottom:0.5rem"><strong>About Clari Pathcare</strong></h3>
+          <h6 style="color:#dbeafe; margin:0">Clari Pathcare provides NABL-accredited lab services with safe home sample collection and fast, accurate reports. Book online or via WhatsApp.</h6>
+        </div>
+        <div>
+          <h4><strong>Services</strong></h4>
+          <ul style="list-style:none; padding:0; margin:0">
+            <li><a href="#packagesSection">Health Packages</a></li>
+            <li><a href="#testsSection">Individual Tests</a></li>
+            <li><a href="#bookModal" data-bs-toggle="modal">Home Collection</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4><strong>Contact</strong></h4>
+          <div><strong>WhatsApp:</strong> <a id="footerWA" href="#">+91 9769452302</a></div>
+          <div><strong>Email:</strong> <a href="mailto:ClariPathcare@gmail.com">ClariPathcare@gmail.com</a></div>
+          <div style="margin-top:10px"><small>© 2025 Clari Pathcare. Terms • Privacy</small></div>
+        </div>
       </div>
-      <div>
-        <h4><strong>Services</strong></h4>
-        <ul style="list-style:none; padding:0; margin:0">
-          <li><a href="#packagesSection">Health Packages</a></li>
-          <li><a href="#testsSection">Individual Tests</a></li>
-          <li><a href="#bookModal" data-bs-toggle="modal">Home Collection</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4><strong>Contact</strong></h4>
-        <div><strong>WhatsApp:</strong> <a id="footerWA" href="#">+91 9769452302</a></div>
-        <div><strong>Email:</strong> <a href="mailto:ClariPathcare@gmail.com">ClariPathcare@gmail.com</a></div>
-        <div style="margin-top:10px"><small>© 2025 Clari Pathcare. Terms • Privacy</small></div>
+    </footer>
+  </div>
+
+  <!-- Toast (desktop/large screens) -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3 d-none d-md-block" style="z-index:1300">
+    <div id="addToast" class="toast align-items-center text-bg-success border-0" role="alert">
+      <div class="d-flex">
+        <div class="toast-body">✅ Added to your cart!</div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast"></button>
       </div>
     </div>
-  </footer>
   </div>
+
+  <!-- Offcanvas Cart (mobile/tablet) -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cartSidebar" aria-labelledby="cartSidebarLabel">
+    <div class="offcanvas-header">
+      <h5 id="cartSidebarLabel" class="offcanvas-title">Your Cart</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-flex justify-content-between align-items-center">
+        <h6 class="mb-0">Added Items</h6>
+        <small class="text-muted" id="ocSideCount">0</small>
+      </div>
+      <div id="ocSideCartList" class="mt-2"></div>
+      <div id="ocSideCartEmpty" class="cart-empty">No items added yet.</div>
+      <hr class="my-3">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="fw-bold">Total</div>
+        <div id="ocSideCartTotal" class="price-tight">₹0</div>
+      </div>
+      <button id="ocSideProceed" class="btn btn-primary w-100 mt-2" data-bs-toggle="modal" data-bs-target="#bookModal" data-bs-dismiss="offcanvas">Proceed to Booking</button>
+    </div>
+  </div>
+
+  <!-- Sticky bar for mobile confirmation -->
+  <div id="addedBar" class="position-fixed bottom-0 start-50 translate-middle-x bg-success text-white px-3 py-2 rounded shadow d-md-none d-none">✅ Item added to cart</div>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
+  <!-- App Script (all-in-one) -->
   <script>
-  /* ------------------------
-     Configuration
-     ------------------------ */
-  const WHATSAPP_NUMBER = '+919769452302'; // REPLACE with your number (with country code, +91...)
-  // -------------------------
-  // Data
+  /* ========================
+     Configuration & Data
+     ======================== */
+  const WHATSAPP_NUMBER = '+919769452302';
   const DATA = {
     tests: [
       { id:'t1', name:'CBC (Complete Blood Count)', price:299, desc:'Complete hemogram: RBC, WBC, Platelets.' },
@@ -417,13 +372,14 @@ aside.sticky-col {
     ]
   };
 
-  /* ------------------------
+  /* ========================
      Helpers & DOM
-     ------------------------ */
+     ======================== */
   const $ = sel => document.querySelector(sel);
   const $$ = sel => Array.from(document.querySelectorAll(sel));
   const money = v => '₹' + Number(v || 0).toLocaleString('en-IN');
-  const esc = s => String(s||'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const esc = s => String(s||'').replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
+  const isMobile = () => window.matchMedia('(max-width: 991.98px)').matches;
 
   // Elements
   const carouselInner = $('#carouselInner');
@@ -431,23 +387,31 @@ aside.sticky-col {
   const testsGrid = $('#testsGrid');
   const suggestionsEl = $('#suggestions');
   const globalSearch = $('#globalSearch');
-  const bookModal = new bootstrap.Modal($('#bookModal'));
   const bookType = $('#bookType'), bookSearch = $('#bookSearch'), bookList = $('#bookList');
   const cartListEl = $('#cartList'), cartEmptyEl = $('#cartEmpty'), bookTotalEl = $('#bookTotal');
   const whatsappTopBtn = $('#whatsappTopBtn'), whatsappFloat = $('#whatsappFloat'), contactWA = $('#contactWA'), footerWA = $('#footerWA');
 
-  // Sidebar cart elements (NEW)
+  // Sidebar cart (desktop) elements
   const sideCartList = $('#sideCartList');
   const sideCartEmpty = $('#sideCartEmpty');
   const sideCartTotal = $('#sideCartTotal');
   const sideCount = $('#sideCount');
 
-  // Cart (selected items) - array of objects { id, type, name, price }
+  // Offcanvas cart (mobile) elements
+  const ocEl = $('#cartSidebar');
+  let ocInstance = null; // will be lazily created
+  const ocSideCartList = $('#ocSideCartList');
+  const ocSideCartEmpty = $('#ocSideCartEmpty');
+  const ocSideCartTotal = $('#ocSideCartTotal');
+  const ocSideCount = $('#ocSideCount');
+  const addedBar = $('#addedBar');
+
+  // Cart state
   let CART = [];
 
-  /* ------------------------
-     Render carousel
-     ------------------------ */
+  /* ========================
+     Renderers
+     ======================== */
   function renderCarousel(){
     carouselInner.innerHTML = '';
     DATA.packages.forEach((p, i) => {
@@ -467,9 +431,6 @@ aside.sticky-col {
     new bootstrap.Carousel('#popularCarousel', { interval: 3500, ride: 'carousel' });
   }
 
-  /* ------------------------
-     Render main lists
-     ------------------------ */
   function renderPackages(){
     packagesGrid.innerHTML = '';
     DATA.packages.forEach(p=>{
@@ -517,9 +478,9 @@ aside.sticky-col {
     });
   }
 
-  /* ------------------------
-     Search suggestions (global)
-     ------------------------ */
+  /* ========================
+     Global Search Suggestions
+     ======================== */
   function buildSuggestions(q){
     if(!q){ suggestionsEl.classList.add('d-none'); suggestionsEl.innerHTML=''; return; }
     q = q.trim().toLowerCase();
@@ -545,15 +506,17 @@ aside.sticky-col {
   suggestionsEl.addEventListener('click', e => {
     const item = e.target.closest('.suggest-item'); if(!item) return;
     const type = item.dataset.type, id = item.dataset.id;
-    openBookModal(type, id); // opens modal and adds item to cart
+    openBookModal(type, id);
     suggestionsEl.classList.add('d-none');
   });
   document.addEventListener('click', e => { if(!e.target.closest('.search-wrap')) suggestionsEl.classList.add('d-none'); });
   globalSearch.addEventListener('focus', ()=> { if(globalSearch.value.trim()) buildSuggestions(globalSearch.value); });
 
-  /* ------------------------
-     Booking modal + Cart functions
-     ------------------------ */
+  /* ========================
+     Booking modal + Cart
+     ======================== */
+  const bookModal = new bootstrap.Modal(document.getElementById('bookModal'));
+
   function populateBookList(type, filter=''){
     const list = (type === 'package') ? DATA.packages.slice() : DATA.tests.slice();
     filter = (filter||'').trim().toLowerCase();
@@ -577,18 +540,13 @@ aside.sticky-col {
     }).join('') || '<div class="text-muted p-2">No items found</div>';
   }
 
-  // Cart operations
   function addToCartById(type, id){
-    let item = null;
-    if(type === 'package') item = DATA.packages.find(p => p.id === id);
-    else item = DATA.tests.find(t => t.id === id);
+    let item = (type === 'package') ? DATA.packages.find(p => p.id === id) : DATA.tests.find(t => t.id === id);
     if(!item) return;
-
-    // prevent duplicates of same type+id
-    if(CART.find(c => c.id === item.id && c.type === type)) return;
-
+    if(CART.find(c => c.id === item.id && c.type === type)) { afterAddUIFeedback(); return; }
     CART.push({ id: item.id, type, name: item.name, price: item.price });
     renderCart();
+    afterAddUIFeedback();
   }
 
   function removeFromCart(index){
@@ -598,7 +556,7 @@ aside.sticky-col {
   }
 
   function renderCart(){
-    // --- modal list ---
+    // Modal list
     cartListEl.innerHTML = '';
     if(CART.length === 0){
       cartEmptyEl.style.display = 'block';
@@ -615,9 +573,8 @@ aside.sticky-col {
         cartListEl.appendChild(div);
       });
     }
-    updateTotals();
 
-    // --- sidebar list (NEW) ---
+    // Desktop sidebar list
     sideCartList.innerHTML = '';
     if(CART.length === 0){
       sideCartEmpty.style.display = 'block';
@@ -634,16 +591,38 @@ aside.sticky-col {
         sideCartList.appendChild(row);
       });
     }
+
+    // Offcanvas list (mobile)
+    ocSideCartList.innerHTML = '';
+    if(CART.length === 0){
+      ocSideCartEmpty.style.display = 'block';
+    } else {
+      ocSideCartEmpty.style.display = 'none';
+      CART.forEach((c, idx) => {
+        const row = document.createElement('div');
+        row.className = 'cart-item';
+        row.innerHTML = `<div class="small" style="font-weight:700">${esc(c.name)}</div>
+                         <div style="display:flex; align-items:center; gap:8px">
+                           <div class="price-tight">${money(c.price)}</div>
+                           <button class="cart-remove" data-idx="${idx}">×</button>
+                         </div>`;
+        ocSideCartList.appendChild(row);
+      });
+    }
+
+    // Totals & counts
+    updateTotals();
     sideCount.textContent = CART.length;
+    ocSideCount.textContent = CART.length;
   }
 
   function updateTotals(){
     const total = CART.reduce((s,i) => s + Number(i.price || 0), 0);
     bookTotalEl.textContent = money(total);
     sideCartTotal.textContent = money(total);
+    ocSideCartTotal.textContent = money(total);
   }
 
-  // Opening modal programmatically and optionally adding an item
   function openBookModal(type='test', preselectId=null){
     bookType.value = type;
     bookSearch.value = '';
@@ -653,7 +632,24 @@ aside.sticky-col {
   }
   window.openBookModal = openBookModal;
 
-  // Click handlers (delegated)
+  function afterAddUIFeedback(){
+    // Desktop: toast + sidebar bump
+    if(!isMobile()){
+      const toastEl = document.getElementById('addToast');
+      if(toastEl){ bootstrap.Toast.getOrCreateInstance(toastEl).show(); }
+      const aside = document.querySelector('aside.sticky-col');
+      if(aside){ aside.classList.add('aside-bump'); setTimeout(()=> aside.classList.remove('aside-bump'), 500); }
+      return;
+    }
+    // Mobile: show sticky bar + open offcanvas instantly
+    if(addedBar){ addedBar.classList.remove('d-none'); setTimeout(()=> addedBar.classList.add('d-none'), 1200); }
+    if(ocEl){
+      if(!ocInstance) ocInstance = bootstrap.Offcanvas.getOrCreateInstance(ocEl);
+      ocInstance.show();
+    }
+  }
+
+  // Delegated clicks (add/show/remove)
   document.body.addEventListener('click', e => {
     const btn = e.target.closest('[data-action]');
     if(btn){
@@ -673,7 +669,6 @@ aside.sticky-col {
         return;
       }
     }
-    // remove from either modal list or sidebar list
     if(e.target.classList.contains('cart-remove')){
       const idx = Number(e.target.dataset.idx);
       removeFromCart(idx);
@@ -681,10 +676,10 @@ aside.sticky-col {
   });
 
   // bookType/bookSearch events
-  bookType.addEventListener('change', ()=> populateBookList(bookType.value, bookSearch.value));
-  bookSearch.addEventListener('input', ()=> populateBookList(bookType.value, bookSearch.value));
+  document.getElementById('bookType').addEventListener('change', ()=> populateBookList(bookType.value, bookSearch.value));
+  document.getElementById('bookSearch').addEventListener('input', ()=> populateBookList(bookType.value, bookSearch.value));
 
-  // suggestions keyboard focusability (mutation observer)
+  // suggestions keyboard focus
   const suggestionObserver = new MutationObserver(()=>{ suggestionsEl.querySelectorAll('.suggest-item').forEach(el=>el.tabIndex=0); });
   suggestionObserver.observe(suggestionsEl, { childList:true, subtree:true });
 
@@ -692,13 +687,13 @@ aside.sticky-col {
   document.addEventListener('click', e => { if(!e.target.closest('.search-wrap')) suggestionsEl.classList.add('d-none'); });
 
   // submit -> WhatsApp
-  $('#bookForm').addEventListener('submit', e => {
+  document.getElementById('bookForm').addEventListener('submit', e => {
     e.preventDefault();
     if(CART.length === 0){ alert('Please add at least one test or package to proceed.'); return; }
-    const name = $('#bookName').value.trim() || 'Guest';
-    const phone = $('#bookPhone').value.trim() || '';
-    const date = $('#bookDate').value || '';
-    const time = $('#bookTime').value || '';
+    const name = document.getElementById('bookName').value.trim() || 'Guest';
+    const phone = document.getElementById('bookPhone').value.trim() || '';
+    const date = document.getElementById('bookDate').value || '';
+    const time = document.getElementById('bookTime').value || '';
     let total = CART.reduce((s,it) => s + Number(it.price || 0), 0);
 
     let msg = `Hello Clari Pathcare,%0AI would like to book the following:%0A`;
@@ -706,28 +701,32 @@ aside.sticky-col {
     msg += `%0ATotal: ₹${total}%0AName: ${encodeURIComponent(name)}%0APhone: ${encodeURIComponent(phone)}%0ADate: ${date} ${time}%0A%0APlease confirm collection.`;
     const waUrl = `https://wa.me/${WHATSAPP_NUMBER.replace('+','')}?text=${msg}`;
     window.open(waUrl, '_blank');
-    const bs = bootstrap.Modal.getInstance($('#bookModal')); if(bs) bs.hide();
+    const bs = bootstrap.Modal.getInstance(document.getElementById('bookModal')); if(bs) bs.hide();
   });
 
-  /* ------------------------
-     Init page
-     ------------------------ */
-  renderCarousel();
-  renderPackages();
-  renderTests();
-  renderCart(); // also initializes sidebar panel
+  /* ========================
+     Init
+     ======================== */
+  function init(){
+    renderCarousel();
+    renderPackages();
+    renderTests();
+    renderCart();
 
-  // wire up top WhatsApp buttons
-  whatsappTopBtn.href = `https://wa.me/${WHATSAPP_NUMBER.replace('+','')}`;
-  whatsappFloat.href = `https://wa.me/${WHATSAPP_NUMBER.replace('+','')}`;
-  contactWA.href = `https://wa.me/${WHATSAPP_NUMBER.replace('+','')}`;
-  footerWA.href = `https://wa.me/${WHATSAPP_NUMBER.replace('+','')}`;
+    // wire up WhatsApp buttons
+    const wa = `https://wa.me/${WHATSAPP_NUMBER.replace('+','')}`;
+    whatsappTopBtn.href = wa; whatsappFloat.href = wa; contactWA.href = wa; footerWA.href = wa;
 
-  // reveal animations
-  (function(){ document.querySelectorAll('.reveal').forEach(el=>{ const io = new IntersectionObserver(entries => entries.forEach(en=>{ if(en.isIntersecting) el.classList.add('show'); }), {threshold:0.12}); io.observe(el); }); })();
+    // reveal animations
+    document.querySelectorAll('.reveal').forEach(el=>{
+      const io = new IntersectionObserver(entries => entries.forEach(en=>{ if(en.isIntersecting) el.classList.add('show'); }), {threshold:0.12});
+      io.observe(el);
+    });
 
-  // keyboard "/" focuses search
-  document.addEventListener('keydown', e => { if(e.key === '/' && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){ e.preventDefault(); $('#globalSearch').focus(); } });
+    // keyboard "/" focuses search
+    document.addEventListener('keydown', e => { if(e.key === '/' && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){ e.preventDefault(); document.getElementById('globalSearch').focus(); } });
+  }
+  document.addEventListener('DOMContentLoaded', init);
   </script>
 </body>
 </html>
