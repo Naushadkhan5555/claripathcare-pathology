@@ -94,26 +94,52 @@
     .reveal.show{opacity:1; transform:none}
 
     .multi-list{
-  max-height:300px;
-  overflow:auto;
-  border:1px solid #eef2f5;
-  padding:8px;
-  border-radius:8px;
-  background:#fff;
-  margin-top:12px; /* ✅ FIX: ensures it sits below navbar/search */
-  .select-item{display:flex; gap:12px; align-items:center; padding:10px; border-radius:6px}
-.select-item:hover{background:#f8fbff}
-.price-tight{font-weight:800; color:#0b3a62}
-.whatsapp-proc{
-  background:#25D366;
-  color:#fff;
-  border:none;
-  padding:10px 14px; /* ✅ NEW: made tap area bigger */
-  border-radius:8px;
-  margin-top:12px; /* ✅ FIX: keeps button separated from list */
-  width:100%; /* ✅ NEW: makes it full width, always visible */
+  .multi-list {
+  max-height: 300px;
+  overflow: auto;
+  border: 1px solid #eef2f5;
+  padding: 8px;
+  border-radius: 8px;
+  background: #fff;
+  margin-top: 12px;
 }
+
+/* moved outside */
+.select-item {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
 }
+.select-item:hover {
+  background: #f8fbff;
+}
+.price-tight {
+  font-weight: 800;
+  color: #0b3a62;
+}
+.whatsapp-proc {
+  background: #25D366;
+  color: #fff;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-top: 12px;
+  width: 100%;
+}
+
+aside.sticky-col {
+  position: sticky;
+  top: 90px;
+  max-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+}
+aside.sticky-col > .card:last-child {
+  margin-top: auto; /* pushes Contact/Proceed buttons down */
+}
+
 
 /* bottom sheet style (mobile booking panel) */
 .booking-panel {
