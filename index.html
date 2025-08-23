@@ -6,18 +6,20 @@
 <title>Clari Pathcare — Book Tests & Packages</title>
 
 <!-- ✅ Cleaned Favicon Setup -->
-<link rel="apple-touch-icon" href="clari-512.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
-<link rel="icon" type="image/png" sizes="512x512" href="favicon-512x512.png">
-<link rel="apple-touch-icon" href="favicon-512x512.png">
+ <link rel="manifest" href="site.webmanifest">
 
-<!-- ✅ Meta -->
-<meta name="description" content="Clari Pathcare — NABL-certified lab Reports. Home sample collection, health packages & individual tests. Book online or via WhatsApp.">
+<!-- FAVICONS -->
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
 <meta name="theme-color" content="#0e4d92">
 
-<!-- ✅ Add Social & Google Logo Schema HERE -->
+<!-- SOCIAL (Open Graph / Twitter) -->
 <meta property="og:title" content="Clari Pathcare — Book Tests & Packages">
 <meta property="og:description" content="NABL-certified lab reports, home sample collection, health packages & tests. Book online or via WhatsApp.">
 <meta property="og:image" content="https://claripathcare.com/favicon-512x512.png">
@@ -26,24 +28,25 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Clari Pathcare — Book Tests & Packages">
-<meta name="twitter:description" content="NABL-certified lab reports, home sample collection, health packages & tests. Book online or via WhatsApp.">
+<meta name="twitter:description" content="NABL-certified lab reports, home sample collection, health packages & tests.">
 <meta name="twitter:image" content="https://claripathcare.com/favicon-512x512.png">
 
-   <script type="application/ld+json">
-       {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "url": "https://claripathcare.com",
-    "logo": "https://claripathcare.com/favicon-512x512.png",
-    "name": "Clari Pathcare",
-    "sameAs": [
+<!-- JSON-LD (Organization) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "https://claripathcare.com",
+  "logo": "https://claripathcare.com/favicon-512x512.png",
+  "name": "Clari Pathcare",
+  "sameAs": [
     "https://www.facebook.com/claripathcare",
     "https://www.instagram.com/claripathcare",
     "https://www.linkedin.com/company/claripathcare",
     "https://twitter.com/claripathcare"
-    ]
-       }
-  </script>
+  ]
+}
+</script>
 
 
   <!-- Bootstrap 5 -->
@@ -74,7 +77,9 @@
   box-shadow: 0 4px 14px rgb(116, 16, 102);
 }
  .header-inner{max-width:var(--max); margin:auto; display:flex; align-items:center; gap:12px; padding:12px 16px; color: ;}
-    .logo-img{height:54px; width:auto}
+    .logo-img{height:54px; width:auto;
+      
+    }
     /* Search */
     .search-wrap{flex:1; position:relative; max-width:720px}
     .search-input{width:100%; padding:10px 14px; border-radius:8px; border:1px solid #e6e9ee}
@@ -176,7 +181,7 @@ aside.sticky-col {
   <header class="header" role="banner">
     <div class="header-inner">
       <!-- Replace src with your logo path -->
-      <img id="siteLogo" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><rect width='120' height='120' rx='20' fill='%230e4d92'/><text x='60' y='76' fill='white' font-family='Segoe UI, Tahoma' font-size='42' text-anchor='middle'>CP</text></svg>" class="logo-img" alt="Clari Pathcare logo">
+      <img id="siteLogo" src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'><rect width='120' height='120' rx='20' fill='%230e4d92'/><text x='60' y='76' fill='white' font-family='Segoe UI, Tahoma' font-size='42' text-anchor='middle'>CPC</text></svg>" class="logo-img" alt="Clari Pathcare logo" style="background-color: rgb(196, 26, 131);">
       <div style="min-width:160px">
         <div style="font-weight:700; font-size:1rem">Clari Pathcare</div>
         <div style="font-size:.85rem; color:var(--muted)">NABL certified Reports • Home sample collection</div>
