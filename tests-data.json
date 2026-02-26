@@ -1,0 +1,1626 @@
+[
+  {
+    "name": "AFB-Xpert panel (M.Tb Detection & Rifamipicin resistance) by CBNAAT - Extra pulmonary samples",
+    "price": 2750.0
+  },
+  {
+    "name": "AFB-Xpert panel (M.Tb Detection & Rifamipicin resistance) by CBNAAT - Pulmonary samples",
+    "price": 2750.0
+  },
+  {
+    "name": "Alanine Transaminase (SGPT)",
+    "price": 190.0
+  },
+  {
+    "name": "Albumin",
+    "price": 165.0
+  },
+  {
+    "name": "Albumin creatinine ratio (ACR) - Spot sample",
+    "price": 900.0
+  },
+  {
+    "name": "Alcohol Ethanol Serum",
+    "price": 1150.0
+  },
+  {
+    "name": "Aldosterone",
+    "price": 2440.0
+  },
+  {
+    "name": "Alkaline Phosphatase",
+    "price": 210.0
+  },
+  {
+    "name": "Allergen, Individual-Micro organism Aspergillus Fumigatus fungus",
+    "price": 1550.0
+  },
+  {
+    "name": "Alpha Feto Protein (AFP)",
+    "price": 750.0
+  },
+  {
+    "name": "Amylase",
+    "price": 450.0
+  },
+  {
+    "name": "ANA Screening by IFA",
+    "price": 1100.0
+  },
+  {
+    "name": "Androstenedione (A4)",
+    "price": 2250.0
+  },
+  {
+    "name": "Angiotensin Converting Enzyme (ACE)",
+    "price": 1452.0
+  },
+  {
+    "name": "ANTI CCP (ACCP)",
+    "price": 1375.0
+  },
+  {
+    "name": "Anti Chlamydia Antibody Igm",
+    "price": 1600.0
+  },
+  {
+    "name": "Anti Ds-DNA",
+    "price": 1650.0
+  },
+  {
+    "name": "Anti HCV IgM",
+    "price": 2002.0
+  },
+  {
+    "name": "Anti Hepatitis A Virus (ANTI HAV) - IgG",
+    "price": 880.0
+  },
+  {
+    "name": "Anti Hepatitis A Virus (ANTI HAV) - IgM",
+    "price": 880.0
+  },
+  {
+    "name": "Anti Hepatitis B Core Antibody (AHBC) - IGM",
+    "price": 880.0
+  },
+  {
+    "name": "Anti Hepatitis B Core Antibody (AHBc) - Total",
+    "price": 1045.0
+  },
+  {
+    "name": "Anti Hepatitis B Envelope Antibody (AHBe) -Total",
+    "price": 935.0
+  },
+  {
+    "name": "Anti Hepatitis C Virus (HCV) - Total",
+    "price": 935.0
+  },
+  {
+    "name": "Anti Hepatitis E Virus (HEV) - IgG",
+    "price": 1210.0
+  },
+  {
+    "name": "Anti Hepatitis E Virus (HEV) - IgM",
+    "price": 1210.0
+  },
+  {
+    "name": "Anti Mitochondrial Antibody",
+    "price": 1980.0
+  },
+  {
+    "name": "Anti Mullerian Hormone (AMH)",
+    "price": 2145.0
+  },
+  {
+    "name": "Anti Nuclear Antibodies (ANA)",
+    "price": 750.0
+  },
+  {
+    "name": "Anti Phospholipid Antibody (APL) - IgG",
+    "price": 825.0
+  },
+  {
+    "name": "Anti Phospholipid Antibody (APL) - IgM",
+    "price": 825.0
+  },
+  {
+    "name": "Anti TPO",
+    "price": 1150.0
+  },
+  {
+    "name": "Anti-Hepatitis B Surface antibodies (Anti-HBs titre)",
+    "price": 770.0
+  },
+  {
+    "name": "Anti-microsomal antibodies",
+    "price": 2420.0
+  },
+  {
+    "name": "Anti-ro SSA Antibodies by EIA",
+    "price": 2000.0
+  },
+  {
+    "name": "Anti-Smooth Muscle Antibody",
+    "price": 1870.0
+  },
+  {
+    "name": "Anti-Streptolysin O (ASO)",
+    "price": 473.0
+  },
+  {
+    "name": "Apo B: Apo A1 ratio",
+    "price": 990.0
+  },
+  {
+    "name": "Apolipoprotein - A1",
+    "price": 495.0
+  },
+  {
+    "name": "Apolipoprotein - B",
+    "price": 495.0
+  },
+  {
+    "name": "Appendix -Large Biopsy 3-6 cm",
+    "price": 1500.0
+  },
+  {
+    "name": "APTT",
+    "price": 418.0
+  },
+  {
+    "name": "Aspartate AminoTransferase (SGOT )",
+    "price": 190.0
+  },
+  {
+    "name": "Aspergillosis IgG antibodies",
+    "price": 2100.0
+  },
+  {
+    "name": "Aspergillosis IgM antibodies",
+    "price": 2400.0
+  },
+  {
+    "name": "Beta 2 Glycoprotein 1 - IgG",
+    "price": 1100.0
+  },
+  {
+    "name": "Beta 2 Glycoprotein 1 - IgM",
+    "price": 1100.0
+  },
+  {
+    "name": "Beta 2 Microglobulin",
+    "price": 2000.0
+  },
+  {
+    "name": "Beta HCG",
+    "price": 550.0
+  },
+  {
+    "name": "Beta-Thalassemia Screenig with Graph",
+    "price": 400.0
+  },
+  {
+    "name": "Bicarbonate",
+    "price": 440.0
+  },
+  {
+    "name": "Bile Acids",
+    "price": 2390.0
+  },
+  {
+    "name": "Bilirubin Direct",
+    "price": 130.0
+  },
+  {
+    "name": "Bilirubin Total",
+    "price": 130.0
+  },
+  {
+    "name": "Biotinidase Enzyme Activity",
+    "price": 605.0
+  },
+  {
+    "name": "Blood C/S - BacT/Alert (with bottle)",
+    "price": 1045.0
+  },
+  {
+    "name": "Blood C/S - BacT/Alert (without bottle)",
+    "price": 1045.0
+  },
+  {
+    "name": "Blood Toxic Element Profile",
+    "price": 900.0
+  },
+  {
+    "name": "Blood Urea Nitrogen (BUN)",
+    "price": 165.0
+  },
+  {
+    "name": "Body Fluid Analysis - Plerual Fluid",
+    "price": 1750.0
+  },
+  {
+    "name": "Body Fluid Analysis (Other) - Body Fluid",
+    "price": 1750.0
+  },
+  {
+    "name": "Body Fluid Analysis -Ascitic Fluid",
+    "price": 1750.0
+  },
+  {
+    "name": "Body fluid analysis for malignant cells",
+    "price": 1200.0
+  },
+  {
+    "name": "Breast biopsy -Medium 1-3 cm",
+    "price": 1000.0
+  },
+  {
+    "name": "Breast biopsy -small <1cm",
+    "price": 800.0
+  },
+  {
+    "name": "Breast lump",
+    "price": 1000.0
+  },
+  {
+    "name": "Brucella IgM",
+    "price": 1650.0
+  },
+  {
+    "name": "BUN/Creatinine ratio",
+    "price": 220.0
+  },
+  {
+    "name": "C - Reactive Protein (CRP)",
+    "price": 495.0
+  },
+  {
+    "name": "CA 19.9",
+    "price": 1210.0
+  },
+  {
+    "name": "CA125",
+    "price": 1155.0
+  },
+  {
+    "name": "CA15.3",
+    "price": 1210.0
+  },
+  {
+    "name": "Calcitonin",
+    "price": 2890.0
+  },
+  {
+    "name": "Calcium",
+    "price": 176.0
+  },
+  {
+    "name": "Calcium creatinine ratio (Spot)",
+    "price": 462.0
+  },
+  {
+    "name": "Calprotectin",
+    "price": 3630.0
+  },
+  {
+    "name": "Carcino Embryonic Antigen (CEA)",
+    "price": 715.0
+  },
+  {
+    "name": "Cardiolipin Antibody (ACL) -IgA",
+    "price": 800.0
+  },
+  {
+    "name": "Cardiolipin Antibody (ACL) -IgG",
+    "price": 770.0
+  },
+  {
+    "name": "Cardiolipin Antibody (ACL) -IgM",
+    "price": 770.0
+  },
+  {
+    "name": "CBC-Complete Blood Count",
+    "price": 190.0
+  },
+  {
+    "name": "CBC-Complete Hemogram Test(28)",
+    "price": 190.0
+  },
+  {
+    "name": "CD3/CD4/CD8",
+    "price": 1320.0
+  },
+  {
+    "name": "Ceruloplasmin",
+    "price": 1350.0
+  },
+  {
+    "name": "Cervix biopsy -Medium 1-3 cm",
+    "price": 1000.0
+  },
+  {
+    "name": "Cervix biopsy -small <1cm",
+    "price": 800.0
+  },
+  {
+    "name": "Cheek biopsy -small <1cm",
+    "price": 800.0
+  },
+  {
+    "name": "Chikungunya Combo Rapid Test",
+    "price": 1100.0
+  },
+  {
+    "name": "Chikungunya IgG Rapid antibody",
+    "price": 825.0
+  },
+  {
+    "name": "Chikungunya IgM Rapid antibody",
+    "price": 825.0
+  },
+  {
+    "name": "Chloride",
+    "price": 275.0
+  },
+  {
+    "name": "Colon biopsy -small <1cm",
+    "price": 800.0
+  },
+  {
+    "name": "Complement 3 (C3)",
+    "price": 660.0
+  },
+  {
+    "name": "Complement 4 (C4)",
+    "price": 660.0
+  },
+  {
+    "name": "Cortisol (4:00 PM)",
+    "price": 605.0
+  },
+  {
+    "name": "Cortisol (8:00 AM)",
+    "price": 605.0
+  },
+  {
+    "name": "Covid 19 Antibodies - Total",
+    "price": 950.0
+  },
+  {
+    "name": "C-Peptide Fasting",
+    "price": 1100.0
+  },
+  {
+    "name": "C-Peptide PP",
+    "price": 1100.0
+  },
+  {
+    "name": "Creatine Kinase-MB (CK-MB)",
+    "price": 715.0
+  },
+  {
+    "name": "Creatinine Phospho Kinase (CPK) - Total",
+    "price": 385.0
+  },
+  {
+    "name": "Culture & Sensitivity, Aerobic bacteria Blood 1 Aerobic,1-Anerobic",
+    "price": 2200.0
+  },
+  {
+    "name": "Culture & Sensitivity, Aerobic bacteria Blood single bottle",
+    "price": 1500.0
+  },
+  {
+    "name": "Culture & Sensitivity, Aerobic bacteria Body Fluids Specify type",
+    "price": 1600.0
+  },
+  {
+    "name": "Culture & Sensitivity, Aerobic bacteria CSF",
+    "price": 1600.0
+  },
+  {
+    "name": "Culture & Sensitivity, Aerobic bacteria Other samples",
+    "price": 1500.0
+  },
+  {
+    "name": "Culture & Sensitivity, Aerobic bacteria Pus",
+    "price": 1600.0
+  },
+  {
+    "name": "Culture & Sensitivity, Aerobic bacteria Semen",
+    "price": 1600.0
+  },
+  {
+    "name": "Culture & Sensitivity, Aerobic bacteria Sputum",
+    "price": 1600.0
+  },
+  {
+    "name": "Culture & Sensitivity, Aerobic bacteria Stool",
+    "price": 1750.0
+  },
+  {
+    "name": "Culture & Sensitivity, Aerobic bacteria Throat Swab",
+    "price": 1600.0
+  },
+  {
+    "name": "Culture & Sensitivity, Aerobic bacteria Urine",
+    "price": 1600.0
+  },
+  {
+    "name": "Cystatin - C",
+    "price": 1650.0
+  },
+  {
+    "name": "Cytomegalo Virus (CMV) - IgG",
+    "price": 660.0
+  },
+  {
+    "name": "Cytomegalo Virus (CMV) - IgM",
+    "price": 660.0
+  },
+  {
+    "name": "DCP-Decarboxy Prothrombin PIVKA-II",
+    "price": 3350.0
+  },
+  {
+    "name": "D-DIMER",
+    "price": 1650.0
+  },
+  {
+    "name": "Dengue -IgG (CLIA)",
+    "price": 660.0
+  },
+  {
+    "name": "Dengue -IgG (ELISA)",
+    "price": 660.0
+  },
+  {
+    "name": "Dengue IgG (Rapid)",
+    "price": 300.0
+  },
+  {
+    "name": "Dengue -IgM (CLIA)",
+    "price": 660.0
+  },
+  {
+    "name": "Dengue -IgM (ELISA)",
+    "price": 660.0
+  },
+  {
+    "name": "Dengue IgM (Rapid)",
+    "price": 300.0
+  },
+  {
+    "name": "Dengue NS-1 Antigen (CLIA)",
+    "price": 660.0
+  },
+  {
+    "name": "Dengue NS-1 Antigen (ELISA)",
+    "price": 660.0
+  },
+  {
+    "name": "Dengue NS-1 Antigen (Rapid)",
+    "price": 300.0
+  },
+  {
+    "name": "Desmoglein I Antibody",
+    "price": 3200.0
+  },
+  {
+    "name": "Desmoglein III Antibody",
+    "price": 3200.0
+  },
+  {
+    "name": "DHEA-Sulphate (DHEAS)",
+    "price": 1045.0
+  },
+  {
+    "name": "Di Hydro Testosterone (DHT)",
+    "price": 3200.0
+  },
+  {
+    "name": "Direct Coombs Test",
+    "price": 825.0
+  },
+  {
+    "name": "Double Marker - First Trimester",
+    "price": 2200.0
+  },
+  {
+    "name": "eGFR (estimated Glomerular Filtration Rate)",
+    "price": 200.0
+  },
+  {
+    "name": "Endometrium biopsy -Medium 1-3 c",
+    "price": 1000.0
+  },
+  {
+    "name": "Eosinophils-Absolute Count",
+    "price": 200.0
+  },
+  {
+    "name": "Erythropoietin",
+    "price": 2500.0
+  },
+  {
+    "name": "ESR (Erythrocyte Sedimentation Rate)",
+    "price": 200.0
+  },
+  {
+    "name": "Estradiol",
+    "price": 605.0
+  },
+  {
+    "name": "Factor VIII Activity",
+    "price": 3850.0
+  },
+  {
+    "name": "Ferritin",
+    "price": 800.0
+  },
+  {
+    "name": "Fibrinogen",
+    "price": 1250.0
+  },
+  {
+    "name": "Fistula -Medium 1-3 Biopsy cm",
+    "price": 1000.0
+  },
+  {
+    "name": "FNAC",
+    "price": 1150.0
+  },
+  {
+    "name": "Folic acid",
+    "price": 1045.0
+  },
+  {
+    "name": "Follicle Stimulating Hormone (FSH)",
+    "price": 495.0
+  },
+  {
+    "name": "Free Beta HCG",
+    "price": 1100.0
+  },
+  {
+    "name": "Free PSA",
+    "price": 935.0
+  },
+  {
+    "name": "Free PSA/Total PSA ratio",
+    "price": 1760.0
+  },
+  {
+    "name": "Free Testosterone",
+    "price": 1485.0
+  },
+  {
+    "name": "Free TFT (Free T3,Free T4,TSH)",
+    "price": 1045.0
+  },
+  {
+    "name": "Free Thyroxine (FT4)",
+    "price": 300.0
+  },
+  {
+    "name": "Free Triiodothyronine (FT3)",
+    "price": 275.0
+  },
+  {
+    "name": "Fructosamine",
+    "price": 1125.0
+  },
+  {
+    "name": "FSH, LH & Prolactin",
+    "price": 1500.0
+  },
+  {
+    "name": "Fungal Culture",
+    "price": 605.0
+  },
+  {
+    "name": "Fungal Stain (KOH Mount)",
+    "price": 150.0
+  },
+  {
+    "name": "GAD 65 Antibody by IFA (for Paraneoplastic syndrome)",
+    "price": 6500.0
+  },
+  {
+    "name": "GAD Total Antibody",
+    "price": 6375.0
+  },
+  {
+    "name": "Gall bladder -Large Biopsy 3-6 cm",
+    "price": 1500.0
+  },
+  {
+    "name": "Gamma Glutamyl Transferase (GGT)",
+    "price": 242.0
+  },
+  {
+    "name": "GB specimen -Medium Biopsy 1-3 cm",
+    "price": 1000.0
+  },
+  {
+    "name": "GD Wellness Cardiac Risk Marker (7 Parameters)",
+    "price": 1210.0
+  },
+  {
+    "name": "Genxpert",
+    "price": 2750.0
+  },
+  {
+    "name": "Globulin",
+    "price": 320.0
+  },
+  {
+    "name": "Glucose Challenge Test (2hours after 75gm Glucose load)",
+    "price": 110.0
+  },
+  {
+    "name": "Glucose-6-Phosphate Dehydrogenase (G6PD) Whole Blood",
+    "price": 1045.0
+  },
+  {
+    "name": "Gram Stain",
+    "price": 330.0
+  },
+  {
+    "name": "H1N1 (Swine Flu) RNA Detection by Real Time PCR - Swab",
+    "price": 4600.0
+  },
+  {
+    "name": "Haptoglobin Serum",
+    "price": 1900.0
+  },
+  {
+    "name": "Hba1c (Whole Blood)",
+    "price": 495.0
+  },
+  {
+    "name": "Hba1c (Whole Blood) with Graph",
+    "price": 525.0
+  },
+  {
+    "name": "HbsAg (Rapid Card test)",
+    "price": 450.0
+  },
+  {
+    "name": "HBV DNA Quantitative Viral Load",
+    "price": 8250.0
+  },
+  {
+    "name": "HCV – RNA PCR (Qualitative)",
+    "price": 9500.0
+  },
+  {
+    "name": "HCV – RNA PCR (Quantitative)",
+    "price": 9500.0
+  },
+  {
+    "name": "HCV Card test",
+    "price": 935.0
+  },
+  {
+    "name": "HCV-Genotyping by sequencing",
+    "price": 7370.0
+  },
+  {
+    "name": "HDL Cholesterol",
+    "price": 180.0
+  },
+  {
+    "name": "HELICOBACTER PYLORI - IgA (ELISA)",
+    "price": 2500.0
+  },
+  {
+    "name": "HELICOBACTER PYLORI - IgG (CLIA)",
+    "price": 2500.0
+  },
+  {
+    "name": "HELICOBACTER PYLORI - IgM (ELISA)",
+    "price": 2440.0
+  },
+  {
+    "name": "Helicobacter Pylori Antigen detection by  - Stool",
+    "price": 1500.0
+  },
+  {
+    "name": "Hemoglobin",
+    "price": 180.0
+  },
+  {
+    "name": "Hemoglobinopathy Profile - HbF/HbS",
+    "price": 600.0
+  },
+  {
+    "name": "Hemoglobinopathy Profile - HbF/HbS (with Graph)",
+    "price": 600.0
+  },
+  {
+    "name": "Hepatitis B Envelope Antigen (HBeAg)",
+    "price": 825.0
+  },
+  {
+    "name": "Hepatitis B Surface Antigen (HBsAg) (Quantitative)",
+    "price": 495.0
+  },
+  {
+    "name": "Herpes Simplex Virus (HSV I & II)-IgG",
+    "price": 350.0
+  },
+  {
+    "name": "Herpes Simplex Virus I (HSV)-IgG",
+    "price": 385.0
+  },
+  {
+    "name": "Herpes Simplex Virus I (HSV)-IgM",
+    "price": 385.0
+  },
+  {
+    "name": "Herpes Simplex Virus II (HSV)-IgG",
+    "price": 385.0
+  },
+  {
+    "name": "Herpes Simplex Virus II (HSV)-IgM",
+    "price": 385.0
+  },
+  {
+    "name": "High Sensitivity C-Reactive Protein (hs- CRP)",
+    "price": 750.0
+  },
+  {
+    "name": "HIV - I & II",
+    "price": 300.0
+  },
+  {
+    "name": "HIV - Western Blot",
+    "price": 2640.0
+  },
+  {
+    "name": "HIV (Rapid Card Test)",
+    "price": 475.0
+  },
+  {
+    "name": "HIV p24 Antigen",
+    "price": 650.0
+  },
+  {
+    "name": "HIV RNA Detection by RT_PCR (Qualitative)",
+    "price": 4125.0
+  },
+  {
+    "name": "HLA B27 studies (PCR)",
+    "price": 3975.0
+  },
+  {
+    "name": "HLAB27",
+    "price": 1100.0
+  },
+  {
+    "name": "Homocysteine",
+    "price": 1155.0
+  },
+  {
+    "name": "Human Growth Harmone (HGH)",
+    "price": 660.0
+  },
+  {
+    "name": "Immature Platelets Fraction (IPF)",
+    "price": 750.0
+  },
+  {
+    "name": "Immunofixation (Quantitative)",
+    "price": 9700.0
+  },
+  {
+    "name": "Immunoglobulin  M (IgM)",
+    "price": 625.0
+  },
+  {
+    "name": "Immunoglobulin A (IgA)",
+    "price": 950.0
+  },
+  {
+    "name": "Immunoglobulin G (IgG)",
+    "price": 1100.0
+  },
+  {
+    "name": "Indirect Coombs Test",
+    "price": 825.0
+  },
+  {
+    "name": "Influenza Panel by RT-PCR",
+    "price": 5500.0
+  },
+  {
+    "name": "Inhibin -A",
+    "price": 1375.0
+  },
+  {
+    "name": "Insulin – like Growth Factor (IGF -1)",
+    "price": 3850.0
+  },
+  {
+    "name": "Insulin Fasting",
+    "price": 770.0
+  },
+  {
+    "name": "Insulin PP",
+    "price": 770.0
+  },
+  {
+    "name": "Interleukin 6 IL6",
+    "price": 3100.0
+  },
+  {
+    "name": "Ionised Calcium",
+    "price": 790.0
+  },
+  {
+    "name": "Iron",
+    "price": 420.0
+  },
+  {
+    "name": "Iron Studies (Iron,TIBC, Transferrin saturation)",
+    "price": 660.0
+  },
+  {
+    "name": "Karyotyping - Blood",
+    "price": 5000.0
+  },
+  {
+    "name": "Karyotyping - Blood (Husband)",
+    "price": 4400.0
+  },
+  {
+    "name": "Karyotyping - Blood (Wife)",
+    "price": 4400.0
+  },
+  {
+    "name": "Ketone by Fully Automated Urine chemistry & Microscopy",
+    "price": 300.0
+  },
+  {
+    "name": "Kidney Profile",
+    "price": 320.0
+  },
+  {
+    "name": "Lactate",
+    "price": 1100.0
+  },
+  {
+    "name": "Lactate Dehydrogenase (LDH Serum)",
+    "price": 363.0
+  },
+  {
+    "name": "LDL Cholesterol - Direct",
+    "price": 300.0
+  },
+  {
+    "name": "LE cell test",
+    "price": 605.0
+  },
+  {
+    "name": "Lead (Blood)",
+    "price": 1870.0
+  },
+  {
+    "name": "Leptospira IgG",
+    "price": 1250.0
+  },
+  {
+    "name": "Leptospira IgG & IgM Rapid",
+    "price": 800.0
+  },
+  {
+    "name": "Leptospira IgM",
+    "price": 1100.0
+  },
+  {
+    "name": "Leptospira IgM Rapid",
+    "price": 650.0
+  },
+  {
+    "name": "LFT (Liver Function Test)",
+    "price": 1045.0
+  },
+  {
+    "name": "LH/FSH Ratio",
+    "price": 950.0
+  },
+  {
+    "name": "Lipase",
+    "price": 620.0
+  },
+  {
+    "name": "Lipid Profile",
+    "price": 715.0
+  },
+  {
+    "name": "Lipoprotein (A) [Lp(a)]",
+    "price": 1045.0
+  },
+  {
+    "name": "Lithium",
+    "price": 495.0
+  },
+  {
+    "name": "LKM1 Antibodies (Liver Kidney Microsomes)",
+    "price": 2420.0
+  },
+  {
+    "name": "Lupus Anticoagulants",
+    "price": 2650.0
+  },
+  {
+    "name": "Luteinizing Hormone (LH)",
+    "price": 495.0
+  },
+  {
+    "name": "Lymph node biopsy -Medium 1-3 cm",
+    "price": 1000.0
+  },
+  {
+    "name": "Magnesium",
+    "price": 440.0
+  },
+  {
+    "name": "Malarial Antigen Detection",
+    "price": 700.0
+  },
+  {
+    "name": "Mass -Medium Biopsy 1-3 cm",
+    "price": 1000.0
+  },
+  {
+    "name": "Max Kidney Profile",
+    "price": 900.0
+  },
+  {
+    "name": "Microalbumin",
+    "price": 575.0
+  },
+  {
+    "name": "Microalbumin 24 hours",
+    "price": 600.0
+  },
+  {
+    "name": "Microalbumin Creatinine Ratio - Spot Sample",
+    "price": 797.0
+  },
+  {
+    "name": "Microalbumin creatinine ratio- 24 Hours Urine",
+    "price": 800.0
+  },
+  {
+    "name": "Microalbumin creatinine ratio- Spot Urine",
+    "price": 800.0
+  },
+  {
+    "name": "Microfilaria Antibody",
+    "price": 1210.0
+  },
+  {
+    "name": "MPO - ANCA ( P - ANCA )",
+    "price": 1320.0
+  },
+  {
+    "name": "Mumps Virus IgG antibody",
+    "price": 1800.0
+  },
+  {
+    "name": "Mycoplasma Pneumoniae IgM",
+    "price": 2850.0
+  },
+  {
+    "name": "Neonatal Hemoglobinopathy Profile",
+    "price": 600.0
+  },
+  {
+    "name": "Noninvasive prenatal Screening (NIPS/NIPT)",
+    "price": 15000.0
+  },
+  {
+    "name": "NT-Pro BNP",
+    "price": 3450.0
+  },
+  {
+    "name": "Ovarian cyst -Large Biopsy 3-6 cm",
+    "price": 1500.0
+  },
+  {
+    "name": "Pancreatic Profile (2 Parameters)",
+    "price": 1000.0
+  },
+  {
+    "name": "PAP Smear - Conventional",
+    "price": 825.0
+  },
+  {
+    "name": "PAP Smear - Liquid Based Cytology",
+    "price": 1410.0
+  },
+  {
+    "name": "PAPPA (Pregnancy Associated Plasma Protein -A)",
+    "price": 950.0
+  },
+  {
+    "name": "PBS for Schistocytes",
+    "price": 275.0
+  },
+  {
+    "name": "Peripheral blood smear (PBS)",
+    "price": 300.0
+  },
+  {
+    "name": "Phadiatop",
+    "price": 1450.0
+  },
+  {
+    "name": "Phenytoin",
+    "price": 935.0
+  },
+  {
+    "name": "Pheripheral Blood Smear",
+    "price": 400.0
+  },
+  {
+    "name": "Phosphorus",
+    "price": 200.0
+  },
+  {
+    "name": "Platelet Count",
+    "price": 180.0
+  },
+  {
+    "name": "Potassium",
+    "price": 220.0
+  },
+  {
+    "name": "PR3 - ANCA ( C-ANCA )",
+    "price": 1210.0
+  },
+  {
+    "name": "Procalcitonin",
+    "price": 3025.0
+  },
+  {
+    "name": "Progesterone",
+    "price": 605.0
+  },
+  {
+    "name": "Prolactin",
+    "price": 605.0
+  },
+  {
+    "name": "Prostate Specific Antigen (PSA)-Total",
+    "price": 770.0
+  },
+  {
+    "name": "Protein C Activity",
+    "price": 5350.0
+  },
+  {
+    "name": "Protein Creatinine Ratio (PCR) - Spot Sample",
+    "price": 950.0
+  },
+  {
+    "name": "Protein creatinine ratio (Spot)",
+    "price": 605.0
+  },
+  {
+    "name": "Protein Electrophoresis",
+    "price": 660.0
+  },
+  {
+    "name": "Protein S Activity",
+    "price": 4950.0
+  },
+  {
+    "name": "Prothrombin Time (PT with INR)",
+    "price": 450.0
+  },
+  {
+    "name": "PTH -Intact (Parathyroid Hormone)",
+    "price": 1450.0
+  },
+  {
+    "name": "Pus Routine Microscopy",
+    "price": 400.0
+  },
+  {
+    "name": "Quadruple Marker - Second Trimester",
+    "price": 3025.0
+  },
+  {
+    "name": "QuantiFERON-TB Gold (Interferon-gamma release assay (IGRA)",
+    "price": 2400.0
+  },
+  {
+    "name": "Rectal biopsy -small <1cm",
+    "price": 800.0
+  },
+  {
+    "name": "Reducing Substances- Stool",
+    "price": 375.0
+  },
+  {
+    "name": "Reticulocyte Count",
+    "price": 550.0
+  },
+  {
+    "name": "Rh Antibody Titre",
+    "price": 1175.0
+  },
+  {
+    "name": "Rheumatoid Factor (RF)",
+    "price": 495.0
+  },
+  {
+    "name": "Rubella  - IgG",
+    "price": 660.0
+  },
+  {
+    "name": "Rubella  - IgM",
+    "price": 660.0
+  },
+  {
+    "name": "SARS-CoV-2 RT-PCR",
+    "price": 800.0
+  },
+  {
+    "name": "SARS-COV-2 Spike protein IgG Antibodies",
+    "price": 1150.0
+  },
+  {
+    "name": "Scrub typhus IgM by EIA - Serum",
+    "price": 1150.0
+  },
+  {
+    "name": "SERUM  ZINC (By Photometry)",
+    "price": 880.0
+  },
+  {
+    "name": "Serum Bilirubin - Total & Direct",
+    "price": 275.0
+  },
+  {
+    "name": "SERUM COPPER (By Photometry)",
+    "price": 300.0
+  },
+  {
+    "name": "Serum Creatinine",
+    "price": 180.0
+  },
+  {
+    "name": "Serum Electrolyte Profile",
+    "price": 520.0
+  },
+  {
+    "name": "Serum Insulin PP after 75gm Glucose load",
+    "price": 770.0
+  },
+  {
+    "name": "Sex Hormone Binding Globulin (SHBG)",
+    "price": 660.0
+  },
+  {
+    "name": "Sickling Test",
+    "price": 350.0
+  },
+  {
+    "name": "Smear for MF (Microfilaria)",
+    "price": 400.0
+  },
+  {
+    "name": "Smear for MP (Malarial Parasite)",
+    "price": 275.0
+  },
+  {
+    "name": "Sodium",
+    "price": 275.0
+  },
+  {
+    "name": "Spot Urinary Creatinine",
+    "price": 200.0
+  },
+  {
+    "name": "Spot Urinary protein",
+    "price": 425.0
+  },
+  {
+    "name": "Sputum Routine",
+    "price": 450.0
+  },
+  {
+    "name": "Stone Analysis Kidney (Renal) calculus",
+    "price": 1500.0
+  },
+  {
+    "name": "Stool for Occult Blood",
+    "price": 300.0
+  },
+  {
+    "name": "Stool Routine",
+    "price": 220.0
+  },
+  {
+    "name": "Sugar (Glucose) Fasting",
+    "price": 70.0
+  },
+  {
+    "name": "Sugar (Glucose) Post Prandial",
+    "price": 70.0
+  },
+  {
+    "name": "Sugar (Glucose) Random",
+    "price": 70.0
+  },
+  {
+    "name": "Syphilis TP",
+    "price": 1400.0
+  },
+  {
+    "name": "Testosterone",
+    "price": 605.0
+  },
+  {
+    "name": "Thyroglobulin - Cancer Marker",
+    "price": 1450.0
+  },
+  {
+    "name": "Thyroid Auto Antibodies (Anti-TG & Anti-TPO)",
+    "price": 2420.0
+  },
+  {
+    "name": "Thyroid Profile  - Total T3,Total T4,TSH (TFT)",
+    "price": 495.0
+  },
+  {
+    "name": "Thyroid Profile (5 Parameters)",
+    "price": 3500.0
+  },
+  {
+    "name": "Tissue Transglutaminase - Iga (TTG)",
+    "price": 1210.0
+  },
+  {
+    "name": "Tissue Transglutaminase IgG (TTG)",
+    "price": 1830.0
+  },
+  {
+    "name": "Total Cholesterol",
+    "price": 180.0
+  },
+  {
+    "name": "Total IGE",
+    "price": 825.0
+  },
+  {
+    "name": "Total Iron Binding Capacity (TIBC)",
+    "price": 440.0
+  },
+  {
+    "name": "Total Leucocytes Count",
+    "price": 110.0
+  },
+  {
+    "name": "Total Protein",
+    "price": 200.0
+  },
+  {
+    "name": "Total Protein, Albumin, Globulin,A/G ratio",
+    "price": 400.0
+  },
+  {
+    "name": "Total Thyroxine (T4)",
+    "price": 198.0
+  },
+  {
+    "name": "Total Triiodothyronine (T3)",
+    "price": 198.0
+  },
+  {
+    "name": "TOXOPLASMA  GONDII - IgM",
+    "price": 660.0
+  },
+  {
+    "name": "TOXOPLASMA GONDII - IgG",
+    "price": 660.0
+  },
+  {
+    "name": "Toxoplasma Gondii - IgM",
+    "price": 660.0
+  },
+  {
+    "name": "Treponema Pallidum Haemagglutination(TPHA)",
+    "price": 770.0
+  },
+  {
+    "name": "Triglycerides",
+    "price": 285.0
+  },
+  {
+    "name": "Triple Marker-Second Trimester",
+    "price": 2750.0
+  },
+  {
+    "name": "Troponine T",
+    "price": 1800.0
+  },
+  {
+    "name": "TSH - Receptor Antibody (IgG)",
+    "price": 4510.0
+  },
+  {
+    "name": "TSH (Thyroid Stimulating Hormone)",
+    "price": 275.0
+  },
+  {
+    "name": "TSH Ultra Sensitive",
+    "price": 440.0
+  },
+  {
+    "name": "Typhi Dot IgG",
+    "price": 605.0
+  },
+  {
+    "name": "Typhi Dot IgG & IgM",
+    "price": 880.0
+  },
+  {
+    "name": "Typhi Dot IgM",
+    "price": 605.0
+  },
+  {
+    "name": "Urea",
+    "price": 165.0
+  },
+  {
+    "name": "Uric Acid",
+    "price": 220.0
+  },
+  {
+    "name": "Urinary Copper 24 hours",
+    "price": 1650.0
+  },
+  {
+    "name": "Urinary Electrolytes Spot",
+    "price": 1155.0
+  },
+  {
+    "name": "Urinary Sodium (Spot)",
+    "price": 400.0
+  },
+  {
+    "name": "Urinary Urea Spot",
+    "price": 250.0
+  },
+  {
+    "name": "Urine Bence Jones Proteins- BJP",
+    "price": 1350.0
+  },
+  {
+    "name": "Urine by Liquid based cytology",
+    "price": 1500.0
+  },
+  {
+    "name": "Urine C/S",
+    "price": 950.0
+  },
+  {
+    "name": "Urine Complete",
+    "price": 300.0
+  },
+  {
+    "name": "Urine Osmolality",
+    "price": 990.0
+  },
+  {
+    "name": "Urine Pregnancy test",
+    "price": 220.0
+  },
+  {
+    "name": "Urine Sugar (Fasting)",
+    "price": 70.0
+  },
+  {
+    "name": "Urine Sugar (PP)",
+    "price": 70.0
+  },
+  {
+    "name": "Urine Sugar Random",
+    "price": 70.0
+  },
+  {
+    "name": "Uterus +Cervix+ 2 Falopian tube+2 Overy Biopsy -XL",
+    "price": 1700.0
+  },
+  {
+    "name": "Uterus Biopsy -XL",
+    "price": 1700.0
+  },
+  {
+    "name": "Uterus Cervix Biopsy-XL",
+    "price": 1700.0
+  },
+  {
+    "name": "Uterus Cervix -Large Biopsy 3-6 cm",
+    "price": 1500.0
+  },
+  {
+    "name": "Uterus mass -Large Biopsy 3-6 cm",
+    "price": 1500.0
+  },
+  {
+    "name": "Valproic acid",
+    "price": 770.0
+  },
+  {
+    "name": "Varicella Zooster IgG",
+    "price": 1540.0
+  },
+  {
+    "name": "Varicella Zooster IgM",
+    "price": 950.0
+  },
+  {
+    "name": "VDRL (RPR)",
+    "price": 220.0
+  },
+  {
+    "name": "Vitamin B12",
+    "price": 990.0
+  },
+  {
+    "name": "Vitamin B12 - Active",
+    "price": 1800.0
+  },
+  {
+    "name": "Vitamin B6",
+    "price": 3300.0
+  },
+  {
+    "name": "Vitamin D1,25 Dihydroxy",
+    "price": 3910.0
+  },
+  {
+    "name": "Vitamin D3",
+    "price": 1150.0
+  },
+  {
+    "name": "Weil Felix",
+    "price": 1100.0
+  },
+  {
+    "name": "Widal Slide Test (4Hrs)",
+    "price": 330.0
+  },
+  {
+    "name": "ZINC (Blood)",
+    "price": 880.0
+  },
+  {
+    "name": "Arthritis Basic Screening",
+    "price": 1199.0
+  },
+  {
+    "name": "Basic Health Checkup",
+    "price": 799.0
+  },
+  {
+    "name": "Comprehensive Full Body Checkup with Vitamin D",
+    "price": 1549.0
+  },
+  {
+    "name": "Covid Well",
+    "price": 2599.0
+  },
+  {
+    "name": "Fever Plus Profile",
+    "price": 1760.0
+  },
+  {
+    "name": "Fever Profile",
+    "price": 880.0
+  },
+  {
+    "name": "Freedom A- 2022",
+    "price": 2500.0
+  },
+  {
+    "name": "Freedom B- 2022",
+    "price": 3000.0
+  },
+  {
+    "name": "GD Advance Men Package",
+    "price": 2200.0
+  },
+  {
+    "name": "GD Comprehensive Monsoon Package",
+    "price": 1900.0
+  },
+  {
+    "name": "GD Diabetic Pro",
+    "price": 3060.0
+  },
+  {
+    "name": "GD Good Life Health Package Basic",
+    "price": 1499.0
+  },
+  {
+    "name": "GD LIFE - A1",
+    "price": 1400.0
+  },
+  {
+    "name": "GD LIFE - A2",
+    "price": 1600.0
+  },
+  {
+    "name": "GD LIFE - A3",
+    "price": 1200.0
+  },
+  {
+    "name": "GD LIFE - A4",
+    "price": 2500.0
+  },
+  {
+    "name": "GD LIFE - A5",
+    "price": 1800.0
+  },
+  {
+    "name": "GD LIFE - A6",
+    "price": 1800.0
+  },
+  {
+    "name": "GD LIFE - A7 Male Advance",
+    "price": 2500.0
+  },
+  {
+    "name": "GD LIFE - A8 Women Advance",
+    "price": 2800.0
+  },
+  {
+    "name": "GD LIFE - A8 Women Basic",
+    "price": 2200.0
+  },
+  {
+    "name": "GD Life (A1.3)",
+    "price": 1800.0
+  },
+  {
+    "name": "GD Wellness 15.2",
+    "price": 1600.0
+  },
+  {
+    "name": "GD Wellness 15.3",
+    "price": 2000.0
+  },
+  {
+    "name": "Master Full Body Checkup (Female)",
+    "price": 2500.0
+  },
+  {
+    "name": "Master Full Body Checkup (Male)",
+    "price": 1999.0
+  },
+  {
+    "name": "Monsoon Essential Panel",
+    "price": 1350.0
+  },
+  {
+    "name": "Monsoon Wellness Package - 2022",
+    "price": 1800.0
+  },
+  {
+    "name": "Republic A",
+    "price": 2500.0
+  },
+  {
+    "name": "Republic B",
+    "price": 1950.0
+  }
+]
