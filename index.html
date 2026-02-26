@@ -3,9 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Clari Pathcare —Book Blood Tests & Body Checkup Packages</title>
+  <meta name="description" content="Book blood tests and health checkup packages in Mumbai with home sample collection. NABL certified reports, fast report delivery via WhatsApp, transparent pricing.">
 
-  <!-- FAVICONS -->
+  <title>NABL Certified Lab in Mumbai | Home Sample Collection | Clari Pathcare</title>
+
+  
+  <link rel="canonical" href="https://claripathcare.com/">
+<!-- FAVICONS -->
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -47,85 +51,182 @@
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-  <style>
-    :root {
-      /* Brand palette */
-      --brand-purple: #761e88;
-      --brand-yellow: #ffd166;
-      --brand-blue: #761e88;
-      --brand-green: #25D366;
-      --brand-teal: #c21c77;
-      --brand-grey: #faf8fa;
-      --brand-dark: #212529;
-      --muted: #6b7280;
-      --accent: #0e4d92;
-      --max: 1100px;
-    }
+    <style>
+:root{
+  --max: 1100px;
+  --muted: #6b7280;
 
-    body {
-      font-family: Inter, 'Segoe UI', Tahoma, Arial, sans-serif;
-      background: linear-gradient(135deg, #b918be 0%, #8d1e62 50%, #914774 100%);
-      color: #0e220a;
-      margin: 0;
-    }
+  --bg-main: #F7F7F7;
+  --card-bg: #ffffff;
 
-    /* Sticky header */
-    .header { position: sticky; top: 0; z-index: 1100; background: linear-gradient(90deg, var(--brand-purple), var(--brand-yellow)); box-shadow: 0 4px 14px rgba(116,16,102,.35); }
-    .header-inner { max-width: var(--max); margin: auto; display: flex; align-items: center; gap: 12px; padding: 12px 16px; color: #fff; }
-    .logo-img { height: 54px; width: auto; background: #fff6fb; border-radius: 8px; }
+  --primary: #0F4C81;
+  --secondary: #2CA6A4;
+  --accent: #1E88E5;
 
-    /* Search */
-    .search-wrap{flex:1; position:relative; max-width:720px}
-    .search-input{width:100%; padding:10px 14px; border-radius:8px; border:1px solid #e6e9ee}
-    .suggestions{position:absolute; left:0; right:0; top:calc(100% + 8px); background:#fff; border-radius:8px; box-shadow:0 10px 30px rgba(16,24,40,0.12); max-height:340px; overflow:auto; z-index:1150}
-    .suggest-item{display:flex; justify-content:space-between; gap:10px; padding:10px 12px; border-bottom:1px solid #f1f3f5; cursor:pointer}
-    .suggest-item:hover{background:#f7fbff}
-    .type-badge{font-size:.78rem; color:var(--accent); font-weight:700; background:rgba(14,77,146,0.06); padding:4px 8px; border-radius:999px}
+  --brand-green: #25D366;
+}
 
-    /* Page layout */
-    main{max-width:var(--max); margin:20px auto; padding:0 16px;}
-    .card-shadow{box-shadow:0 8px 30px rgba(16,24,40,0.06); border-radius:10px; border:0}
-    .carousel-img{height:220px; object-fit:cover; border-radius:8px}
-    .reveal{opacity:0; transform:translateY(10px); transition:opacity .6s ease, transform .6s ease}
-    .reveal.show{opacity:1; transform:none}
 
-    /* List inside modal */
-    .multi-list{ max-height: 300px; overflow: auto; border: 1px solid #eef2f5; padding: 8px; border-radius: 8px; background: #fff; margin-top: 12px; }
-    .select-item { display:flex; gap:12px; align-items:center; padding:10px; border-radius:6px; }
-    .select-item:hover { background:#f8fbff; }
-    .price-tight { font-weight:800; color:#0b3a62; }
-    .whatsapp-proc { background: var(--brand-green); color:#fff; border:none; padding:10px 14px; border-radius:8px; margin-top:12px; width:100%; }
+.carousel-item img {
+  transition: transform 0.5s ease;
+}
 
-    /* Sidebar */
-    aside.sticky-col { position: sticky; top: 90px; max-height: calc(100vh - 100px); display:flex; flex-direction:column; overflow-y:auto; scrollbar-width: thin; }
-    aside.sticky-col > .card:last-child { margin-top:auto; }
+.carousel-item:hover img {
+  transform: scale(1.05);
+}
+/* Base */
+body{
+  font-family: Inter, 'Segoe UI', Tahoma, Arial, sans-serif;
+  background: var(--bg-main);
+  color: #111827;
+  margin: 0;
+}
 
-    /* Cart list visual */
-    .cart-item { display:flex; justify-content:space-between; align-items:center; padding:8px 10px; border-radius:6px; background:#fafafa; margin-bottom:8px; }
-    .cart-remove { border:none; background:#ef4444; color:white; padding:6px 8px; border-radius:6px; cursor:pointer; }
-    .cart-empty { color:var(--muted); padding:12px; }
+/* Sticky header */
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 1100;
+  background: #0F4C81;
+  box-shadow: 0 4px 14px rgba(0,0,0,.10);
+}
+.header-inner{
+  max-width: var(--max);
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  color: #fff;
+}
+.logo-img{ height:54px; width:auto; background:#fff; border-radius: 8px; }
 
-    /* Desktop bump animation */
-    .aside-bump { animation: asidePulse .5s ease; }
-    @keyframes asidePulse { 0%{ transform:translateX(0); box-shadow:none; } 30%{ transform:translateX(-6px); box-shadow:0 0 0 rgba(37,211,102,.25); } 60%{ transform:translateX(0); box-shadow:0 0 0 rgba(37,211,102,.12);} 100%{ transform:translateX(0); box-shadow:none;} }
+/* Search */
+.search-wrap{flex:1; position:relative; max-width:720px}
+.search-input{width:100%; padding:10px 14px; border-radius:10px; border:1px solid #e6e9ee}
+.suggestions{position:absolute; left:0; right:0; top:calc(100% + 8px); background:#fff; border-radius:12px;
+  box-shadow:0 10px 30px rgba(16,24,40,0.12); max-height:340px; overflow:auto; z-index:1150}
+.suggest-item{display:flex; justify-content:space-between; gap:10px; padding:10px 12px; border-bottom:1px solid #f1f3f5; cursor:pointer}
+.suggest-item:hover{background:#f7fbff}
+.type-badge{font-size:.78rem; color:var(--accent); font-weight:700; background:rgba(14,77,146,0.06); padding:4px 8px; border-radius:999px}
 
-    /* Mobile tweaks */
-    @media (max-width: 575.98px){
-      .carousel-img{height:150px}
-      .search-wrap{max-width:100%}
-      .side-total{font-size:1.05rem}
-      .btn-sm-add{padding:.45rem .7rem}
-    }
-    @media (min-width: 576px) and (max-width: 991.98px){ .carousel-img{height:180px} }
-    @media (min-width: 992px){ aside.sticky-col{ position: sticky; top: 90px; height: fit-content; } }
-    @media (max-width: 991.98px){ #cartSidebar .offcanvas-body { padding-bottom: 90px; } }
+/* Layout */
+main{max-width:var(--max); margin:20px auto; padding:0 16px;}
+.card-shadow{box-shadow:0 8px 30px rgba(16,24,40,0.06); border-radius:12px; border:0}
 
-    /* Footer border */
-    .bodersolid { border-top: 5px solid rgb(247,248,248); padding-top: 35px; }
+/* Conversion hero */
+.hero2{max-width:var(--max);margin:18px auto 0; padding:18px; border-radius:16px;
+  background: linear-gradient(135deg, rgba(15,76,129,.10), rgba(44,166,164,.10));
+  border:1px solid #e8eef6;
+}
+.hero2 h1{font-size:1.65rem;margin:0 0 8px 0; letter-spacing:-.2px; color:#0b2f4d}
+.hero2 p{margin:0; color:var(--muted); font-size:1rem}
+.badge-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:12px}
+.badge-pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;
+  background:#fff;border:1px solid #eef2f5;color:#0b2f4d;font-size:.92rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}
+.hero-cta .btn{border-radius:999px;padding:.7rem 1.05rem;font-weight:700}
+.hero-note{margin-top:10px;font-size:.9rem;color:var(--muted)}
 
-    /* Mobile added bar */
-    #addedBar { z-index:1300; }
+/* Section cards */
+.section-card{max-width:var(--max);margin:18px auto 0;padding:18px;border-radius:16px;background:var(--card-bg);
+  border:1px solid #eef2f5}
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.kpi{padding:14px;border-radius:14px;background:#f8fafc;border:1px solid #eef2f5}
+.kpi b{display:block;font-size:1.05rem}
+.kpi span{color:var(--muted);font-size:.9rem}
+@media(max-width:992px){.kpi-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.kpi-grid{grid-template-columns:1fr}}
+.faq details{background:#f8fafc;border:1px solid #eef2f5;border-radius:14px;padding:12px 14px;margin:10px 0}
+.faq summary{cursor:pointer;font-weight:700}
+.testi{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.testi .card-mini{padding:14px;border-radius:14px;background:#f8fafc;border:1px solid #eef2f5}
+@media(max-width:992px){.testi{grid-template-columns:1fr}}
+
+/* Carousel img */
+.carousel-img{height:220px; object-fit:cover; border-radius:12px}
+@media (max-width: 575.98px){ .carousel-img{height:150px} .search-wrap{max-width:100%} }
+
+/* Reveal */
+.reveal{opacity:0; transform:translateY(10px); transition:opacity .6s ease, transform .6s ease}
+.reveal.show{opacity:1; transform:none}
+
+/* Modal layout (fix list + selected section bug) */
+.modal-backdrop.show{opacity:.55;}
+.modal-dialog{max-width:900px;}
+.modal-content{
+  background:#fff;
+  height: 90vh;
+  display:flex;
+  flex-direction:column;
+}
+.cp-modal-body{
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+}
+.search-section{
+  flex:1;
+  overflow-y:auto;
+  padding-right:6px;
+}
+.selected-section{
+  border-top:1px solid #eef2f5;
+  padding-top:12px;
+  background:#fff;
+}
+
+/* List inside modal */
+.multi-list{
+  max-height: 380px;
+  overflow:auto;
+  border: 1px solid #eef2f5;
+  padding: 10px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.03);
+  margin-top: 12px;
+}
+.select-item{ display:flex; justify-content:space-between; align-items:center; gap:12px; padding:12px; border-radius:10px; transition:.2s ease; }
+.select-item:hover{ background:#f1f7ff; transform:translateX(3px); }
+.price-tight{ font-weight:800; color:#0b3a62; }
+.whatsapp-proc{ background: var(--brand-green); color:#fff; border:none; padding:12px 14px; border-radius:10px; width:100%; font-weight:800; }
+
+/* Cart list visual */
+.cart-item{ display:flex; justify-content:space-between; align-items:center; padding:8px 10px; border-radius:8px; background:#fafafa; margin-bottom:8px; }
+.cart-remove{ border:none; background:#ef4444; color:white; padding:6px 10px; border-radius:8px; cursor:pointer; }
+.cart-empty{ color:var(--muted); padding:12px; }
+
+/* Sidebar */
+aside.sticky-col { position: sticky; top: 90px; max-height: calc(100vh - 100px); display:flex; flex-direction:column; overflow-y:auto; scrollbar-width: thin; }
+aside.sticky-col > .card:last-child { margin-top:auto; }
+.aside-bump { animation: asidePulse .5s ease; }
+@keyframes asidePulse { 0%{ transform:translateX(0); box-shadow:none; } 30%{ transform:translateX(-6px); box-shadow:0 0 0 rgba(37,211,102,.25); } 60%{ transform:translateX(0); box-shadow:0 0 0 rgba(37,211,102,.12);} 100%{ transform:translateX(0); box-shadow:none;} }
+
+/* Footer border */
+.bodersolid { border-top: 5px solid rgb(247,248,248); padding-top: 35px; }
+
+/* Sticky mobile CTA */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:9999;display:none}
+.sticky-cta a{flex:1;display:flex;justify-content:center;align-items:center;gap:8px;padding:14px 10px;text-decoration:none;color:#fff;font-weight:800;font-size:1rem}
+.sticky-cta .wa{background:#25D366}
+.sticky-cta .call{background:#0d6efd}
+@media(max-width:768px){.sticky-cta{display:flex} body{padding-bottom:64px}}
   </style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Fasting required hota hai?","acceptedAnswer":{"@type":"Answer","text":"Kuch tests (jaise lipid profile,sugar fasting,insulin fasting and ladies ke harmonal related tests) me fasting chahiye hoti hai. Booking ke baad team aapko clearly guide karegi."}},
+    {"@type":"Question","name":"Reports kaise milenge?","acceptedAnswer":{"@type":"Answer","text":"Reports WhatsApp / Email par share kiye jaate hain. Aap request karein to print copy bhi mil sakti hai."}},
+    {"@type":"Question","name":"Home collection safe hai?","acceptedAnswer":{"@type":"Answer","text":"Haan. Trained phlebotomist single-use needles ,icu experienced staff aur hygiene protocol follow karte hain,."}},
+    {"@type":"Question","name":"Booking kaise confirm hoti hai?","acceptedAnswer":{"@type":"Answer","text":"WhatsApp par details share karne ke baad slot confirm ho jayega. Aap Select Tests modal se multiple items bhi add kar sakte hain,hamari clari pathcare website ke zaroye automatically slot filled krke direct whatsaap share krskte hai ."}}
+  ]
+}
+</script>
+
 </head>
 <body>
 
@@ -150,7 +251,101 @@
     </div>
   </header>
 
-  <!-- Popular packages carousel -->
+  
+  <!-- Premium hero (conversion) -->
+  <section class="hero2 reveal" aria-label="Clari Pathcare primary call to action">
+    <h1>NABL Certified Lab in Mumbai</h1>
+    <p>Home Sample Collection • Same‑Day Reports (for most routine tests) • Transparent Pricing</p>
+
+    <div class="badge-row" aria-label="Trust highlights">
+      <span class="badge-pill">✔ Safe & Hygienic Collection</span>
+      <span class="badge-pill">✔ Reports on WhatsApp / Email</span>
+      <span class="badge-pill">✔ Trained Phlebotomists</span>
+      <span class="badge-pill">✔ Support on Chat</span>
+    </div>
+
+    <div class="hero-cta">
+      <a class="btn btn-success wa-link" href="#" target="_blank" style="background:#25D366;border:none;">💬 Book on WhatsApp</a>
+      <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#bookModal" style="background-color: #eb3b58;">🧾 Select Tests</button>
+      <a class="btn btn-primary" href="tel:+919769452302">📞 Call Now</a>
+    </div>
+
+    <div class="hero-note">Tip: Use search bar to find tests quickly (press “/” on desktop).</div>
+  </section>
+
+  <div class="section-card reveal" aria-label="Key service highlights">
+    <div class="kpi-grid">
+      <div class="kpi"><b>Fast Reports</b><span>Most routine reports same day*</span></div>
+      <div class="kpi"><b>Home Collection</b><span>Doorstep sample pickup</span></div>
+      <div class="kpi"><b>Trusted Lab</b><span>NABL certified reports</span></div>
+      <div class="kpi"><b>Clear Pricing</b><span>No hidden charges</span></div>
+    </div>
+    <div class="small mt-2" style="color:var(--muted)">*Time may vary by test type and collection time.</div>
+  </div>
+
+  <div class="section-card reveal" aria-label="Coverage areas">
+    <h4 style="margin:0 0 10px 0">Home Collection Coverage (Mumbai)</h4>
+    <div style="display:flex;flex-wrap:wrap;gap:10px">
+      <span class="badge bg-light text-dark">Andheri</span>
+      <span class="badge bg-light text-dark">Bandra</span>
+      <span class="badge bg-light text-dark">Kurla</span>
+      <span class="badge bg-light text-dark">Dadar</span>
+      <span class="badge bg-light text-dark">Ghatkopar</span>
+      <span class="badge bg-light text-dark">Sion</span>
+      <span class="badge bg-light text-dark">Chembur</span>
+      <span class="badge bg-light text-dark">…and nearby areas</span>
+    </div>
+    <div class="small mt-2" style="color:var(--muted)">Not sure if your location is covered? Tap WhatsApp and share your pincode.</div>
+  </div>
+
+  <div class="section-card reveal" aria-label="Patient testimonials">
+    <h4 style="margin:0 0 10px 0">What Patients Say</h4>
+    <div class="testi">
+      <div class="card-mini">
+        <div style="font-weight:800">★★★★★</div>
+        <div>“Home collection was smooth. Reports same day mil gaye.”</div>
+        <div class="small" style="color:var(--muted)">— Andheri</div>
+      </div>
+      <div class="card-mini">
+        <div style="font-weight:800">★★★★★</div>
+        <div>“Clear pricing and quick support on WhatsApp.”</div>
+        <div class="small" style="color:var(--muted)">— Kurla</div>
+      </div>
+      <div class="card-mini">
+        <div style="font-weight:800">★★★★★</div>
+        <div>“Professional staff, hygienic sample collection.”</div>
+        <div class="small" style="color:var(--muted)">— Dadar</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-card faq reveal" aria-label="Frequently asked questions">
+    <h4 style="margin:0 0 10px 0">FAQ</h4>
+
+    <details>
+      <summary>Fasting required hota hai?</summary>
+      <div class="mt-2">Kuch tests (jaise lipid profile, fasting sugar ,glucose pregnancy test etc) me fasting chahiye hoti hai. Booking ke baad team aapko clearly guide karegi.</div>
+    </details>
+
+    <details>
+      <summary>Reports kaise milenge?</summary>
+      <div class="mt-2">Reports WhatsApp / Email par share kiye jaate hain. Aap request karein to print copy bhi mil sakti hai.</div>
+    </details>
+
+    <details>
+      <summary>Home collection safe hai?</summary>
+      <div class="mt-2">Haan. Trained phlebotomist single‑use needles ,icu experienced staff aur hygiene protocol follow karte hain.</div>
+    </details>
+
+    <details>
+      <summary>Booking kaise confirm hoti hai?</summary>
+      <div class="mt-2">WhatsApp par details share karne ke baad slot confirm ho jayega. Aap “Select Tests” modal se multiple items bhi add kar sakte hain, aur hamari website se smart whatsaap booking feature use krke direct share karskte hai details.</div>
+
+    </details>
+  </div>
+
+
+<!-- Popular packages carousel -->
   <main>
     <div id="popularCarousel" class="carousel slide reveal" data-bs-ride="carousel" style="max-width:var(--max); margin:auto;">
       <div class="carousel-inner" id="carouselInner"></div>
@@ -179,7 +374,7 @@
       <aside class="col-lg-4 sticky-col">
         <!-- Quick Book -->
         <div class="card p-3 card-shadow reveal">
-          <img src="gd-pag.jpg" class="img-fluid rounded mb-2" alt="">
+          <img src="Quick.jpg" class="img-fluid rounded mb-2" alt="">
           <h5>Quick Book</h5>
           <p class="small" style="color:var(--muted)">Click “Add” on any test or package — or open the modal to add multiple items. Your cart updates instantly.</p>
           <button class="btn btn-primary w-100 mb-2" data-bs-toggle="modal" data-bs-target="#bookModal">Open Booking</button>
@@ -215,14 +410,16 @@
 
   <!-- Booking Modal (scrollable) -->
   <div class="modal fade" id="bookModal" tabindex="-1" aria-hidden="true">
-    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <form id="bookForm">
           <div class="modal-header">
             <h5 class="modal-title">Book Tests / Packages</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">
+          <div class="modal-body cp-modal-body">
+            <div class="search-section">
+
             <div class="mb-3 small text-muted">Choose type, search inside the list, pick many items. Total updates automatically.</div>
 
             <div class="row g-2 mb-3">
@@ -240,8 +437,10 @@
             </div>
 
             <div id="bookList" class="multi-list mb-3" role="listbox" aria-multiselectable="true"></div>
+            </div>
 
-            <div class="mb-3">
+            <div class="selected-section">
+<div class="mb-3">
               <h6>Selected Items</h6>
               <div id="cartList" class="mb-2"></div>
               <div id="cartEmpty" class="cart-empty">No items selected.</div>
@@ -264,9 +463,11 @@
             </div>
 
             <div class="small text-muted">When you click Proceed, WhatsApp will open with a pre-filled booking message (you can edit before sending).</div>
+          
+            </div>
           </div>
 
-          <div class="modal-footer">
+          <div class="modal-footer"> sticky-footer">
             <button type="submit" class="btn whatsapp-proc w-100">Proceed to WhatsApp</button>
           </div>
         </form>
@@ -274,13 +475,15 @@
     </div>
   </div>
 
+  <hr style="border: 2px solid blue;">
+
   <!-- Footer -->
   <div class="bodersolid">
     <footer class="Naushad1">
       <div style="max-width:var(--max); margin:auto; display:grid; grid-template-columns:1fr 200px 220px; gap:20px;">
         <div>
           <h3 style="margin-bottom:0.5rem"><strong>About Clari Pathcare</strong></h3>
-          <h6 style="color:#dbeafe; margin:0">Clari Pathcare provides NABL-accredited lab services with safe home sample collection and fast, accurate reports. Book online or via WhatsApp.</h6>
+          <h6 style="color:#0d3972; margin:0">Clari Pathcare provides NABL-accredited lab services with safe home sample collection and fast, accurate reports. Book online or via WhatsApp.</h6>
         </div>
         <div>
           <h4><strong>Services</strong></h4>
@@ -413,24 +616,73 @@
      Renderers
      ======================== */
   function renderCarousel(){
-    carouselInner.innerHTML = '';
-    DATA.packages.forEach((p, i) => {
-      const div = document.createElement('div');
-      div.className = 'carousel-item' + (i===0 ? ' active' : '');
-      div.innerHTML = `
-        <div class="d-flex align-items-end justify-content-start" style="height:220px; background:linear-gradient(0deg, rgba(14,77,146,0.65), rgba(14,77,146,0.25)), url('https://via.placeholder.com/1200x400?text=${encodeURIComponent(p.name)}') center/cover; border-radius:8px; padding:18px;">
-          <div style="color:white; max-width:70%">
-            <h5 style="margin:0">${esc(p.name)}</h5>
-            <div style="font-size:.95rem">${esc(p.desc)}</div>
-            <div style="margin-top:8px"><span class="badge bg-light text-dark">${money(p.price)}</span></div>
-          </div>
-        </div>`;
-      div.addEventListener('click', ()=> openBookModal('package', p.id));
-      carouselInner.appendChild(div);
-    });
-    new bootstrap.Carousel('#popularCarousel', { interval: 3500, ride: 'carousel' });
-  }
+  carouselInner.innerHTML = '';
 
+  const carouselImages = {
+    p1: "./images/full-body-checkup.jpg",
+    p2: "./images/basic-health-checkup.jpg",
+    p3: "./images/women-wellness-package.jpg",
+    p4: "./images/cardiac-risk-package.jpg",
+    p5: "./images/diabetes-screen.jpg",
+    p6: "./images/vitamin-wellness-pack.jpg"
+  };
+
+  DATA.packages.forEach((p, i) => {
+    const imgSrc = carouselImages[p.id];
+
+    const div = document.createElement('div');
+    div.className = 'carousel-item' + (i===0 ? ' active' : '');
+
+    div.innerHTML = `
+      <div style="
+        height:420px;
+        position:relative;
+        border-radius:14px;
+        overflow:hidden;
+        cursor:pointer;
+      ">
+        
+        <img src="${imgSrc}" 
+             style="width:100%; height:100%; object-fit:cover;"
+             alt="${p.name}">
+        
+        <div style="
+          position:absolute;
+          bottom:0;
+          left:0;
+          right:0;
+          padding:30px;
+          background:linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0));
+          color:white;
+        ">
+          <h4 style="margin:0 0 5px 0;">${esc(p.name)}</h4>
+          <div style="font-size:.95rem; margin-bottom:10px;">
+            ${esc(p.desc)}
+          </div>
+          <span style="
+            background:white;
+            color:#0F4C81;
+            padding:6px 14px;
+            border-radius:8px;
+            font-weight:700;
+          ">
+            ${money(p.price)}
+          </span>
+        </div>
+
+      </div>
+    `;
+
+    div.addEventListener('click', ()=> openBookModal('package', p.id));
+
+    carouselInner.appendChild(div);
+  });
+
+  new bootstrap.Carousel('#popularCarousel', {
+    interval: 3500,
+    ride: 'carousel'
+  });
+}
   function renderPackages(){
     packagesGrid.innerHTML = '';
     DATA.packages.forEach(p=>{
@@ -715,7 +967,10 @@
 
     // wire up WhatsApp buttons
     const wa = `https://wa.me/${WHATSAPP_NUMBER.replace('+','')}`;
+    // existing buttons
     whatsappTopBtn.href = wa; whatsappFloat.href = wa; contactWA.href = wa; footerWA.href = wa;
+    // any additional buttons
+    document.querySelectorAll('.wa-link').forEach(a => a.href = wa);
 
     // reveal animations
     document.querySelectorAll('.reveal').forEach(el=>{
@@ -726,7 +981,36 @@
     // keyboard "/" focuses search
     document.addEventListener('keydown', e => { if(e.key === '/' && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)){ e.preventDefault(); document.getElementById('globalSearch').focus(); } });
   }
-  document.addEventListener('DOMContentLoaded', init);
+  document.addEventListener('DOMContentLoaded', async () => {
+    // Load test catalog from tests-data.json (B2C prices only)
+    try {
+      const res = await fetch('tests-data.json', { cache: 'no-store' });
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      const tests = await res.json();
+
+      // Normalize + generate ids; keep your existing rendering/search/cart logic intact
+      DATA.tests = (tests || []).map((t, i) => ({
+        id: 't' + (i + 100),
+        name: String(t.name || '').trim(),
+        price: Number(t.price || 0),
+        desc: ''
+      })).filter(t => t.name && t.price >= 0);
+
+      // Optional: sort A→Z for nicer UX
+      DATA.tests.sort((a,b)=>a.name.localeCompare(b.name));
+    } catch (err) {
+      console.warn('Could not load tests-data.json, using built-in fallback tests. Error:', err);
+    }
+
+    init();
+  });
   </script>
+
+  <!-- Sticky mobile CTA -->
+  <div class="sticky-cta" role="navigation" aria-label="Quick actions">
+    <a class="wa wa-link" href="#" target="_blank">💬 WhatsApp</a>
+    <a class="call" href="tel:+919769452302">📞 Call</a>
+  </div>
+
 </body>
 </html>
